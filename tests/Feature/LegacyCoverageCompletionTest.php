@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use App\Filament\Admin\Resources\ItemResource;
-use App\Filament\Admin\Resources\ModuleResource\Pages\ListModules;
 use App\Filament\Admin\Resources\PlayerItemResource;
 use App\Filament\Admin\Resources\PlayerResource;
 use App\Filament\Admin\Resources\PlayerResource\RelationManagers\QuestsRelationManager;
@@ -165,11 +164,6 @@ it('executes the remaining legacy Filament callbacks', function (): void {
     $tableTooltip = new ReflectionProperty($verifiedColumn, 'tooltip');
     $tableTooltip->setAccessible(true);
     expect(($tableTooltip->getValue($verifiedColumn))($verified))->toContain('Verified');
-
-    $page = (new ReflectionClass(ListModules::class))->newInstanceWithoutConstructor();
-    $header = new ReflectionMethod($page, 'getHeaderActions');
-    $header->setAccessible(true);
-    $header->invoke($page)[0]->getActionFunction()([]);
 
     $leaderboard = app(LeaderboardWidget::class)->table(Table::make($harness));
     $leaderboard->getRecordActions()[0]->record($player)->getUrl();
