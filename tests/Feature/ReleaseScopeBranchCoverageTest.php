@@ -6,8 +6,6 @@ use App\Filament\Admin\Resources\GameResourceResource;
 use App\Filament\Admin\Resources\GuildResource;
 use App\Filament\Admin\Resources\ItemResource;
 use App\Filament\Admin\Resources\MenuResource;
-use App\Filament\Admin\Resources\ModuleResource;
-use App\Filament\Admin\Resources\ModuleResource\Pages\ListModules;
 use App\Filament\Admin\Resources\PlayerItemResource;
 use App\Filament\Admin\Resources\PlayerResource;
 use App\Filament\Admin\Resources\PlayerResource\RelationManagers\ItemsRelationManager;
@@ -107,12 +105,6 @@ it('executes representative Filament table and widget branches', function (): vo
         $filter->apply(Menu::query(), []);
     }
 
-    $moduleTable = ModuleResource::table(Table::make(new ReleaseScopeBranchTableHarness()));
-    foreach ($moduleTable->getFilters() as $filter) {
-        $filter->apply(ModuleResource::getEloquentQuery(), ['value' => true]);
-        $filter->apply(ModuleResource::getEloquentQuery(), ['value' => false]);
-    }
-
     $player = Player::factory()->create(['level' => 98]);
     $action = collect(PlayerResource::table(Table::make(new ReleaseScopeBranchTableHarness()))->getFlatBulkActions())
         ->first(fn ($candidate): bool => $candidate->getName() === 'adjustLevel');
@@ -193,7 +185,7 @@ it('executes release-scope resource forms, relations, actions, and model relatio
     $tableProperty->setAccessible(true);
     $tableProperty->setValue($scopeHarness, Table::make($scopeHarness));
 
-    foreach ([GuildResource::class, ItemResource::class, MenuResource::class, ModuleResource::class, PlayerItemResource::class, PlayerResource::class, QuestResource::class] as $resource) {
+    foreach ([GuildResource::class, ItemResource::class, MenuResource::class, PlayerItemResource::class, PlayerResource::class, QuestResource::class] as $resource) {
         $resource::form(Schema::make());
         $resource::getRelations();
         $resource::getPages();
@@ -239,7 +231,6 @@ it('executes release-scope resource forms, relations, actions, and model relatio
     expect($item->fresh()->rarity)->toBe('legendary');
 
     MenuResource::getEloquentQuery()->whereNull('parent_id')->get();
-    ModuleResource::getEloquentQuery()->get();
     $menu = Menu::factory()->create();
     expect($menu->parent())->toBeInstanceOf(BelongsTo::class)
         ->and($menu->children())->toBeInstanceOf(HasMany::class);
@@ -280,7 +271,6 @@ it('executes release-scope resource forms, relations, actions, and model relatio
     $viewUser = (new ReflectionClass(ViewUser::class))->newInstanceWithoutConstructor();
     invokeReleaseScopeMethod($viewUser, 'getHeaderActions');
     UsersTable::configure(Table::make(new ReleaseScopeBranchTableHarness()));
-    invokeReleaseScopeMethod((new ReflectionClass(ListModules::class))->newInstanceWithoutConstructor(), 'getHeaderActions');
 
     $playerItemTable = PlayerItemResource::table(Table::make($scopeHarness));
     foreach ($playerItemTable->getColumns() as $column) {
@@ -312,11 +302,6 @@ it('executes release-scope resource forms, relations, actions, and model relatio
         $column->record($quest);
         expect($callback($column))->toBe($longDescription);
     }
-
-    $moduleQuery = ModuleResource::getEloquentQuery();
-    $moduleQuery->paginate();
-    $moduleQuery->where('enabled', true)->paginate();
-    $moduleQuery->where('enabled', false)->paginate();
 
     $leaderboard = app(LeaderboardWidget::class)->table(Table::make($scopeHarness));
     $leader = Player::factory()->create(['rank' => 1]);

@@ -22,9 +22,6 @@ use App\Filament\Admin\Resources\MenuResource;
 use App\Filament\Admin\Resources\MenuResource\Pages\EditMenu;
 use App\Filament\Admin\Resources\MenuResource\Pages\ListMenus;
 use App\Filament\Admin\Resources\MenuResource\Pages\ViewMenu;
-use App\Filament\Admin\Resources\ModuleResource;
-use App\Filament\Admin\Resources\ModuleResource\Pages\ListModules;
-use App\Filament\Admin\Resources\ModuleResource\Pages\ViewModule;
 use App\Filament\Admin\Resources\PlayerItemResource;
 use App\Filament\Admin\Resources\PlayerItemResource\Pages\EditPlayerItem;
 use App\Filament\Admin\Resources\PlayerItemResource\Pages\ListPlayerItems;
@@ -491,8 +488,6 @@ it('builds the registered Filament page actions and infolists', function () {
         EditMenu::class,
         ListMenus::class,
         ViewMenu::class,
-        ListModules::class,
-        ViewModule::class,
         EditPlayerItem::class,
         ListPlayerItems::class,
         ViewPlayerItem::class,
@@ -631,7 +626,6 @@ it('builds the registered relation-manager and user table definitions', function
         GuildResource::class,
         ItemResource::class,
         MenuResource::class,
-        ModuleResource::class,
         PlayerItemResource::class,
         PlayerResource::class,
         QuestResource::class,

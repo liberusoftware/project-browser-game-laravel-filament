@@ -5,7 +5,6 @@ use App\Filament\Admin\Resources\GameResourceResource;
 use App\Filament\Admin\Resources\GuildResource;
 use App\Filament\Admin\Resources\ItemResource;
 use App\Filament\Admin\Resources\MenuResource;
-use App\Filament\Admin\Resources\ModuleResource;
 use App\Filament\Admin\Resources\PlayerItemResource;
 use App\Filament\Admin\Resources\PlayerResource;
 use App\Filament\Admin\Resources\QuestResource;
@@ -28,7 +27,6 @@ it('builds every game resource definition', function () {
         GuildResource::class,
         ItemResource::class,
         MenuResource::class,
-        ModuleResource::class,
         PlayerItemResource::class,
         PlayerResource::class,
         QuestResource::class,
@@ -42,10 +40,6 @@ it('builds every game resource definition', function () {
             ->and($resource::getPages())->not->toBeEmpty();
 
         $resource::getRelations();
-
-        if ($resource === ModuleResource::class) {
-            expect($resource::getEloquentQuery()->get())->not->toBeEmpty();
-        }
     }
 });
 

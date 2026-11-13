@@ -574,20 +574,6 @@
         },
         {
             "type": "path",
-            "url": "modules/module-manager-filament",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
-            "url": "modules/module-manager",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
             "url": "modules/notifications",
             "options": {
                 "symlink": true
@@ -797,7 +783,6 @@
                     "liberusoftware/localization-core-livewire": "1.4.1",
                     "liberusoftware/localization-mymemory": "1.4.1",
                     "liberusoftware/observability": "1.4.1",
-                    "liberusoftware/module-manager-filament": "1.4.1",
                     "liberusoftware/localization-core": "1.4.1",
                     "liberusoftware/notifications": "1.4.1",
                     "liberusoftware/organizations-teams-filament": "1.4.1",
@@ -814,13 +799,14 @@
                     "liberusoftware/theme-support-livewire": "1.4.1",
                     "liberusoftware/two-factor-authentication": "1.4.1",
                     "liberusoftware/webhooks": "1.4.1",
-                    "liberusoftware/module-manager": "1.4.2",
                     "liberusoftware/activity-comments": "1.4.2",
                     "liberusoftware/analytics-core": "1.4.1",
                     "liberusoftware/identity-core": "1.4.1"
                 }
             },
             "exclude": [
+                "liberusoftware/module-manager",
+                "liberusoftware/module-manager-filament",
                 "liberusoftware/tenancy"
             ]
         },
@@ -951,8 +937,8 @@
         "liberusoftware/module-browser-game-world-api": "^1.0",
         "liberusoftware/module-browser-game-world-filament": "^1.0",
         "liberusoftware/module-browser-game-world-livewire": "^1.0",
-        "liberusoftware/module-manager": "^1.0",
-        "liberusoftware/module-manager-filament": "^1.1",
+        "liberusoftware/module-manager": "^1.9",
+        "liberusoftware/module-manager-filament": "^1.11",
         "liberusoftware/notifications": "^1.0",
         "liberusoftware/observability": "^1.0",
         "liberusoftware/organizations-teams": "^1.0",
