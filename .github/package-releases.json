@@ -398,5 +398,165 @@
     "source_signature": "5b27e6842b2f26a1c38cbec01451fbc947f224b39a76c7d3751e7fb028a8f489",
     "source_tree": "55213ad0d107da50c697d8f40513af52443147bc",
     "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-moderation-and-analytics-api": {
+    "path": "modules/browser-game-moderation-and-analytics-api",
+    "reference": "461f429c4da2b97ccc4b809a59b9eae0d1016bce",
+    "repository": "https://github.com/liberusoftware/module-browser-game-moderation-and-analytics-api",
+    "source_signature": "2289433b124e0437d16fd62c35ee9959cac7bc89dec886c9778b016f6a70d91c",
+    "source_tree": "1ad1adaa28eb2a251c36209a1b20afe802e5ea44",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-moderation-and-analytics-livewire": {
+    "path": "modules/browser-game-moderation-and-analytics-livewire",
+    "reference": "ba84e5df6cb684bf2c8cb4cb7612554da36a34f3",
+    "repository": "https://github.com/liberusoftware/module-browser-game-moderation-and-analytics-livewire",
+    "source_signature": "4a28daea9fa2a54254e95c632db665aed09fe0bf42a7ace1dd205cd9ab0d8238",
+    "source_tree": "20e8bf6fd1dad9a6f408bc1cb45dc46d91de25a8",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-quests": {
+    "path": "modules/browser-game-quests",
+    "reference": "68b53fbd150ba1238f791449b3045d287c6d7504",
+    "repository": "https://github.com/liberusoftware/module-browser-game-quests",
+    "source_signature": "684ddc92c3383ab4e5e1ecbee88502955fbc93060e8f7ff8ac3d6314585b493a",
+    "source_tree": "ea7eae1ea158fd31813f1bb0ce169a065816359f",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-quests-api": {
+    "path": "modules/browser-game-quests-api",
+    "reference": "9e7384822a9c92e3f5580b5890e533c3acffdf89",
+    "repository": "https://github.com/liberusoftware/module-browser-game-quests-api",
+    "source_signature": "df21851b3dafe65f645c69f4c1e7b76d9ed4e81aeb89912bc5095f1a7a770266",
+    "source_tree": "db2baf9dcfcac00da987c107b37ffc962d2a794e",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-quests-livewire": {
+    "path": "modules/browser-game-quests-livewire",
+    "reference": "f296a2636e66e660d0fefc7cf6df97bfa70b6d96",
+    "repository": "https://github.com/liberusoftware/module-browser-game-quests-livewire",
+    "source_signature": "6a454b8634b3c723d685772413e3a3df1349a66cdb59046ac7c5e93d8d49a958",
+    "source_tree": "980c047c472743fe7801d448f1cea865304d8466",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-social": {
+    "path": "modules/browser-game-social",
+    "reference": "fad7dcd5afd9f8a09dc7b935df7d1ab05b6621fe",
+    "repository": "https://github.com/liberusoftware/module-browser-game-social",
+    "source_signature": "d932dcef7be34db7d54acaa86bdc5a5db33037190f4946d66634ecd62e73eec0",
+    "source_tree": "3e7081ddb60d3bc83830e83c33fba37a3682ae62",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-social-api": {
+    "path": "modules/browser-game-social-api",
+    "reference": "adf07c1ffaf4eb2b0dd352d43ea149dce398d7a1",
+    "repository": "https://github.com/liberusoftware/module-browser-game-social-api",
+    "source_signature": "71671cbc23f31485cfb84cfa80a93db262689c16617d0265637c44073a00a3a2",
+    "source_tree": "d944d99eca169eeca04d224b967c6dcedd8a8319",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-social-livewire": {
+    "path": "modules/browser-game-social-livewire",
+    "reference": "e7ab4bd189e6b209ebb2ea7e8cf1f1c6ebed5ea6",
+    "repository": "https://github.com/liberusoftware/module-browser-game-social-livewire",
+    "source_signature": "ff137716717506d70bb35ba951b5b57a3c13b367bb991b43279f9adad5db515b",
+    "source_tree": "a23ef9d6e1af50687b454047a09b616c1f972890",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-world": {
+    "path": "modules/browser-game-world",
+    "reference": "80cdbeefc837a149f9829e7fc3e6de805e059ecf",
+    "repository": "https://github.com/liberusoftware/module-browser-game-world",
+    "source_signature": "a89cb3e27c1c04a3a649f0b7d951193e665ebc08711adfc19eaa8a4e0c17063b",
+    "source_tree": "5a24ef76a77e31ba6a2f5603e5fed98146ad4f25",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-world-api": {
+    "path": "modules/browser-game-world-api",
+    "reference": "b04124da646f3cedb7e60a00b4a9fb56aa1dc1e9",
+    "repository": "https://github.com/liberusoftware/module-browser-game-world-api",
+    "source_signature": "2e85f76221e80180b5f814c6c1a94b1ad175184447a1c71295640417634cffdb",
+    "source_tree": "d56ba26c1001dfb2dfb38c51f423bc3887ec815b",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-browser-game-world-livewire": {
+    "path": "modules/browser-game-world-livewire",
+    "reference": "e143efad5f3a58c094ee3215cc18f29885189bcf",
+    "repository": "https://github.com/liberusoftware/module-browser-game-world-livewire",
+    "source_signature": "5c4712b08a3da829e21b231d51519eddfba741906bf8ab3d09a8ecef04434abc",
+    "source_tree": "51e284536f28d40a9f1a7f815e52d42474e77c80",
+    "version": "1.0.1"
+  },
+  "liberusoftware/notifications": {
+    "path": "modules/notifications",
+    "reference": "b187fa63ac3f31d4ddc2aa6f1105e39d01e76f7d",
+    "repository": "https://github.com/liberusoftware/module-notifications",
+    "source_signature": "26d30f6bf7796d81f1a460eb1500deb4422128305982c2ae3f8e00de1020bc51",
+    "source_tree": "d637718847638a111ca69e2d302105859d156430",
+    "version": "1.5.1"
+  },
+  "liberusoftware/observability": {
+    "path": "modules/observability",
+    "reference": "093591947f97d89016572c3642166b491d028dd2",
+    "repository": "https://github.com/liberusoftware/module-observability",
+    "source_signature": "7acacba40e9dfdf4285cb9e81761e27acb60387e99c9ecd3bfc8b0e8d2bede5d",
+    "source_tree": "482399ca144d874b9e260ef5a0e265a0d809d00f",
+    "version": "1.4.7"
+  },
+  "liberusoftware/profiles": {
+    "path": "modules/profiles",
+    "reference": "2a429a0bd16c9ed582a009e19c9c9a71d5f2e7bb",
+    "repository": "https://github.com/liberusoftware/module-profiles",
+    "source_signature": "c0bcf1f42c0d00ff580f43cf0775554a836da7b14f8ce57be3eeba871f1242ad",
+    "source_tree": "3a2c247167926900315b2c3dbb2ee14585a07113",
+    "version": "1.6.0"
+  },
+  "liberusoftware/search-api": {
+    "path": "modules/search-api",
+    "reference": "de4d387b081246e22aeb47149b412355c27a8c55",
+    "repository": "https://github.com/liberusoftware/module-search-api",
+    "source_signature": "1fb715fcdd3e32fe4beddd7a39977dbc79c65ea96e2dc181c85774282286da51",
+    "source_tree": "fb8f80908fcabaf4a841926759c1439dcde99450",
+    "version": "1.6.1"
+  },
+  "liberusoftware/sessions-devices": {
+    "path": "modules/sessions-devices",
+    "reference": "50174438d8f823f16390ca06093f67967ccb5c1d",
+    "repository": "https://github.com/liberusoftware/module-sessions-devices",
+    "source_signature": "aaa15409777dd8920ad9b02b13f2f7e6899581f4adaefd6c18e6258c30d099f0",
+    "source_tree": "86dff081059ee1edb16ebc24d6644f11a2ee2a63",
+    "version": "1.5.1"
+  },
+  "liberusoftware/theme-support-livewire": {
+    "path": "modules/theme-support-livewire",
+    "reference": "808a95a465b2702923921f07b21a5cb9b0982663",
+    "repository": "https://github.com/liberusoftware/module-theme-support-livewire",
+    "source_signature": "8d037f1a0027ab325b948ff2327e59380e8d910efeb5e435cb5a2b62bba86f8f",
+    "source_tree": "ec54af6eb72a681166cd41f4bb7ca88ebf1c2612",
+    "version": "1.6.1"
+  },
+  "liberusoftware/two-factor-authentication": {
+    "path": "modules/two-factor-authentication",
+    "reference": "3ca80cbc17980d9749faf765c0db847ba43c4d29",
+    "repository": "https://github.com/liberusoftware/module-two-factor-authentication",
+    "source_signature": "bdc7d5e730187b97a8d079b0a4dcf690e113a9c7d76149e48aeabe9066abf199",
+    "source_tree": "21c52926225fb1ae0bfffe3ef3dd15535a9fecb2",
+    "version": "1.4.6"
+  },
+  "liberusoftware/users-roles": {
+    "path": "modules/users-roles",
+    "reference": "4aa49df470411bdea1f54abd1a6e76c6173b68d9",
+    "repository": "https://github.com/liberusoftware/module-users-roles",
+    "source_signature": "96033d42d8fc17173e90e6666fb0019d2b232b7ff059b4f520990da2fd7047bc",
+    "source_tree": "4bae1d5190dfbfabb38b1427eeb20930b66738c2",
+    "version": "1.0.3"
+  },
+  "liberusoftware/webhooks": {
+    "path": "modules/webhooks",
+    "reference": "840c0cdc9064abe3a2a61700d12901a60e585ae3",
+    "repository": "https://github.com/liberusoftware/module-webhooks",
+    "source_signature": "a745e5565822b3b055cac838750c61ce0883a5983fcbe531358a3a5a6e59946d",
+    "source_tree": "ea3d2986ba904f6b090f0bab790de3cf91886a68",
+    "version": "1.5.1"
   }
 }
