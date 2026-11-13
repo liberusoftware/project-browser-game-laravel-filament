@@ -17,6 +17,7 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Auth\Access\Response;
 use Illuminate\Database\Eloquent\Model;
 
 class NpcResource extends Resource
@@ -38,9 +39,23 @@ class NpcResource extends Resource
         return auth()->user()?->isSuperAdmin() ?? false;
     }
 
+    public static function getViewAnyAuthorizationResponse(): Response
+    {
+        return static::canViewAny()
+            ? parent::getViewAnyAuthorizationResponse()
+            : Response::deny();
+    }
+
     public static function canCreate(): bool
     {
         return static::canViewAny();
+    }
+
+    public static function getCreateAuthorizationResponse(): Response
+    {
+        return static::canCreate()
+            ? parent::getCreateAuthorizationResponse()
+            : Response::deny();
     }
 
     public static function canEdit(Model $record): bool
@@ -48,9 +63,23 @@ class NpcResource extends Resource
         return static::canViewAny();
     }
 
+    public static function getEditAuthorizationResponse(Model $record): Response
+    {
+        return static::canEdit($record)
+            ? parent::getEditAuthorizationResponse($record)
+            : Response::deny();
+    }
+
     public static function canDelete(Model $record): bool
     {
         return false;
+    }
+
+    public static function getDeleteAuthorizationResponse(Model $record): Response
+    {
+        return static::canDelete($record)
+            ? parent::getDeleteAuthorizationResponse($record)
+            : Response::deny();
     }
 
     public static function form(Schema $schema): Schema
