@@ -77,9 +77,7 @@ class NpcResource extends Resource
 
     public static function getDeleteAuthorizationResponse(Model $record): Response
     {
-        return static::canDelete($record)
-            ? parent::getDeleteAuthorizationResponse($record)
-            : Response::deny();
+        return Response::deny();
     }
 
     public static function form(Schema $schema): Schema
