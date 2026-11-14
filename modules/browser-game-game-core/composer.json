@@ -24,7 +24,7 @@
       "name": "browser-game-game-core"
     }
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "require-dev": {
     "liberusoftware/package-testbench": "^1.5",
     "pestphp/pest": "^5.3.3"
@@ -36,5 +36,10 @@
     "allow-plugins": {
       "pestphp/pest-plugin": true
     }
+  },
+  "homepage": "https://github.com/liberusoftware/module-browser-game-game-core",
+  "support": {
+    "source": "https://github.com/liberusoftware/module-browser-game-game-core",
+    "issues": "https://github.com/liberusoftware/module-browser-game-game-core/issues"
   }
-,"homepage":"https://github.com/liberusoftware/module-browser-game-game-core","support":{"source":"https://github.com/liberusoftware/module-browser-game-game-core","issues":"https://github.com/liberusoftware/module-browser-game-game-core/issues"}}
+}

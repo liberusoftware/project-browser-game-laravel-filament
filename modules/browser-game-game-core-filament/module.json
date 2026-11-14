@@ -3,12 +3,34 @@
   "name": "browser-game-game-core-filament",
   "display_name": "Browser Game Game Core Filament",
   "description": "Filament 5 administration for game worlds, clocks, rulesets, content versions, feature flags, and maintenance state.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "category": "presentation",
   "provider": "Liberu\\BrowserGame\\GameCoreFilament\\GameCoreFilamentServiceProvider",
-  "requires": {"php": "^8.5", "laravel": "^13.0", "packages": {"liberusoftware/module-browser-game-game-core": "^1.0"}},
-  "presentation": {"filament": {"admin": ["Liberu\\BrowserGame\\GameCoreFilament\\GameCoreFilamentPlugin"]}},
-  "capabilities": ["browser-game.game-core.filament"],
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-browser-game-game-core": "^1.0"
+    }
+  },
+  "presentation": {
+    "filament": {
+      "admin": [
+        "Liberu\\BrowserGame\\GameCoreFilament\\GameCoreFilamentPlugin"
+      ]
+    }
+  },
+  "capabilities": [
+    "browser-game.game-core.filament"
+  ],
   "default_enabled": false,
-  "features": ["World administration", "Clock administration", "Ruleset administration", "Content version administration", "Feature flag administration", "Maintenance visibility", "Scoped resource policies"]
+  "features": [
+    "World administration",
+    "Clock administration",
+    "Ruleset administration",
+    "Content version administration",
+    "Feature flag administration",
+    "Maintenance visibility",
+    "Scoped resource policies"
+  ]
 }

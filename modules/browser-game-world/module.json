@@ -3,12 +3,26 @@
   "name": "browser-game-world",
   "display_name": "Browser Game World",
   "description": "Typed regions, locations, maps, travel, encounters, NPCs, resources, weather, and unlocks.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "category": "capability",
   "provider": "Liberu\\BrowserGame\\World\\WorldServiceProvider",
-  "requires": {"php": "^8.5", "laravel": "^13.0"},
-  "suggests": {"liberusoftware/audit": "^1.0", "liberusoftware/observability": "^1.0"},
-  "capabilities": ["browser-game.world"],
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0"
+  },
+  "suggests": {
+    "liberusoftware/audit": "^1.0",
+    "liberusoftware/observability": "^1.0"
+  },
+  "capabilities": [
+    "browser-game.world"
+  ],
   "default_enabled": false,
-  "features": ["Regions and locations", "Maps and travel", "Encounters and NPCs", "Resources and weather", "Unlocks"]
+  "features": [
+    "Regions and locations",
+    "Maps and travel",
+    "Encounters and NPCs",
+    "Resources and weather",
+    "Unlocks"
+  ]
 }

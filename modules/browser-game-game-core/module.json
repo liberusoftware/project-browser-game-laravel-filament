@@ -3,7 +3,7 @@
   "name": "browser-game-game-core",
   "display_name": "Browser Game Game Core",
   "description": "World and shard lifecycle, authoritative game clocks, versioned rules and content, feature flags, and maintenance state.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "category": "capability",
   "provider": "Liberu\\BrowserGame\\GameCore\\GameCoreServiceProvider",
   "requires": {
