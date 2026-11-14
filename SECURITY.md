@@ -2,17 +2,15 @@
 
 ## Reporting a Vulnerability
 
-We take security seriously. If you discover a security vulnerability in the Liberu Browser Game platform, please report it responsibly.
+Private vulnerability reporting is enabled for [liberusoftware/project-browser-game-laravel-filament](https://github.com/liberusoftware/project-browser-game-laravel-filament).
 
-**Do not open a public issue for security vulnerabilities.**
+[**Report a vulnerability privately**](https://github.com/liberusoftware/project-browser-game-laravel-filament/security/advisories/new).
 
-Instead, report vulnerabilities privately through GitHub's security advisory feature:
+Sign in to GitHub and use the link above, or open **Security → Advisories → Report a vulnerability** in this repository. Reports are handled privately through GitHub Security Advisories; maintainers can invite collaborators when needed to investigate and prepare a fix.
 
-1. Navigate to the repository's **Security** tab.
-2. Click **"Report a vulnerability"**.
-3. Provide a detailed description of the vulnerability, including steps to reproduce and potential impact.
+**Do not disclose suspected vulnerabilities in public issues, pull requests, or discussions.**
 
-You will receive an acknowledgment of your report within a reasonable timeframe.
+Include the affected release or commit, package versions, relevant deployment configuration, reproduction steps or a minimal proof of concept, and the security impact. Redact credentials, tokens, personal data, and other sensitive information. Test only systems you own or have permission to assess.
 
 ## What to Expect
 
@@ -32,11 +30,13 @@ The following are in scope for security reports:
 - API endpoints and authentication mechanisms
 - WebSocket and real-time game communication
 
+First-party modules shipped with this application, including code under `modules/`, are also in scope.
+
 ## Out of Scope
 
 The following are **not** in scope:
 
-- Third-party dependencies (report vulnerabilities to the respective upstream projects)
+- Vulnerabilities confined to third-party dependencies should be reported upstream. First-party integration flaws and application-specific impact remain in scope here.
 - Issues requiring `APP_DEBUG=true` in production
 - Social engineering or physical attacks
 - Denial of service attacks against infrastructure
@@ -44,9 +44,4 @@ The following are **not** in scope:
 
 ## Supported Versions
 
-| Version | Supported |
-|---------|-----------|
-| Latest  | Yes       |
-| Previous major | No  |
-
-We recommend always running the latest version of the platform to ensure you have the most up-to-date security fixes.
+Security fixes target the default branch (`main`) and the latest release, when a release is available. Older versions may require an upgrade; backports are not guaranteed. Include the affected version or commit in your report even if you are not running the latest release.
