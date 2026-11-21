@@ -16,14 +16,20 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        $configuredPassword = (string) config('app.seed_admin_password');
+        $adminUser = User::firstOrNew(['email' => 'admin@example.com']);
+        $generatedPassword = null;
 
-        $adminPassword = (string) (config('app.seed_admin_password') ?: Str::random(64));
-        $adminUser = User::create([
-            'name' => 'Admin User',
-            'email' => 'admin@example.com',
-            'password' => Hash::make($adminPassword),
-            'email_verified_at' => now(),
-        ]);
+        if (! $adminUser->exists) {
+            $generatedPassword = $configuredPassword === '' ? Str::random(64) : null;
+            $adminUser->name = 'Admin User';
+            $adminUser->email_verified_at = now();
+            $adminUser->password = Hash::make($generatedPassword ?? $configuredPassword);
+            $adminUser->save();
+        } elseif ($configuredPassword !== '' && ! Hash::check($configuredPassword, $adminUser->password)) {
+            $adminUser->password = Hash::make($configuredPassword);
+            $adminUser->save();
+        }
 
         $team = Team::firstOrFail();
         $adminUser->teams()->syncWithoutDetaching([$team->id]);
@@ -34,9 +40,8 @@ class UserSeeder extends Seeder
         setPermissionsTeamId($team->id);
         $adminUser->assignRole($role);
 
-        // Print passwords to console
-        if (app()->environment('local') && $adminUser->wasRecentlyCreated && blank(config('app.seed_admin_password'))) {
-            $this->command?->info("Admin password: {$adminPassword}");
+        if (app()->environment('local') && $generatedPassword !== null) {
+            $this->command?->info("Admin password: {$generatedPassword}");
         }
     }
 }
