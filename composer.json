@@ -316,11 +316,14 @@
             ]
         },
         {
-            "type": "git",
-            "url": "https://github.com/liberusoftware/module-theme-support.git",
+            "type": "path",
+            "url": "modules/theme-support",
             "only": [
                 "liberusoftware/theme-support"
-            ]
+            ],
+            "options": {
+                "reference": "config"
+            }
         },
         {
             "type": "git",

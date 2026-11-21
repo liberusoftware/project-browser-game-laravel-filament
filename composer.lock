@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "793fa478bb27c734cd60e93a178edacd",
+    "content-hash": "0642290075b980be2e122cef5a1133d5",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -10098,17 +10098,11 @@
         },
         {
             "name": "liberusoftware/settings",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-settings.git",
-                "reference": "c5abc43443553338abd4c7601f9f9f8b14a0647c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-settings/zipball/c5abc43443553338abd4c7601f9f9f8b14a0647c",
-                "reference": "c5abc43443553338abd4c7601f9f9f8b14a0647c",
-                "shasum": ""
+                "reference": "b2fbb2a2efbb67746b4ea6986fc8064e71e3dac0"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
@@ -10130,16 +10124,21 @@
                     "Liberu\\Foundation\\Settings\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Settings\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Typed scoped settings foundation for Liberu applications.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-settings/issues",
-                "source": "https://github.com/liberusoftware/module-settings/tree/v1.5.2"
-            },
-            "time": "2026-11-02T17:37:19+00:00"
+            "time": "2026-11-14T17:08:54+00:00"
         },
         {
             "name": "liberusoftware/settings-filament",
@@ -10424,17 +10423,11 @@
         },
         {
             "name": "liberusoftware/theme-support",
-            "version": "1.8.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/liberusoftware/module-theme-support.git",
-                "reference": "419b4ce4d021061f8a9cace05319f7881c7db3f1"
-            },
+            "version": "1.8.4",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-theme-support/zipball/419b4ce4d021061f8a9cace05319f7881c7db3f1",
-                "reference": "419b4ce4d021061f8a9cace05319f7881c7db3f1",
-                "shasum": ""
+                "type": "path",
+                "url": "modules/theme-support",
+                "reference": "5de7edc3c603ddfc121771466e87e738577dd667"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
@@ -10454,23 +10447,33 @@
                 }
             },
             "autoload": {
-                "files": [
-                    "src/Support/theme_helpers.php"
-                ],
                 "psr-4": {
                     "Liberu\\Foundation\\Theme\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Support/theme_helpers.php"
+                ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Theme\\Tests\\": "tests/"
+                },
+                "files": [
+                    "tests/Helpers.php"
+                ]
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Theme discovery and host presentation support for Liberu applications.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-theme-support/issues",
-                "source": "https://github.com/liberusoftware/module-theme-support/tree/v1.8.3"
-            },
-            "time": "2026-11-14T17:02:26+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "liberusoftware/theme-support-livewire",
