@@ -1,5 +1,7 @@
 <?php
 
+use App\Filament\App\Pages\AccountSetup;
+use App\Services\TeamManagementService;
 use Liberu\Foundation\ModuleManager\Exceptions\DependencyResolutionFailed;
 use Liberu\Foundation\ModuleManager\Manifest;
 use Liberu\Foundation\ModuleManager\ModuleRegistry;
@@ -192,6 +194,42 @@ it('declares a Filament plugin class that exists for every panel', function () {
     }
 
     expect($declared)->toBeGreaterThan(0);
+});
+
+it('keeps shipped gameplay presentation in adapters that require their owning domain', function () {
+    $root = dirname(__DIR__, 2).'/modules';
+    expect(glob($root.'/browser-game-play-*'))->toBe([]);
+
+    foreach (['quests', 'combat', 'social', 'items'] as $gameplayArea) {
+        $domain = "browser-game-{$gameplayArea}";
+        $domainComposer = json_decode(file_get_contents("{$root}/{$domain}/composer.json"), true, flags: JSON_THROW_ON_ERROR);
+
+        foreach (['api' => 'Http', 'filament' => 'Filament', 'livewire' => 'Livewire'] as $surface => $sourceDirectory) {
+            $adapter = "{$root}/{$domain}-{$surface}";
+            $adapterComposer = json_decode(file_get_contents("{$adapter}/composer.json"), true, flags: JSON_THROW_ON_ERROR);
+            $manifest = Manifest::fromFile("{$adapter}/module.json");
+
+            expect("{$root}/{$domain}/host/src/{$sourceDirectory}")->not->toBeDirectory()
+                ->and("{$adapter}/host/src/{$sourceDirectory}")->toBeDirectory()
+                ->and($adapterComposer['require'])->toHaveKey($domainComposer['name'])
+                ->and($manifest->requiredPackages())->toHaveKey($domainComposer['name'])
+                ->and($domainComposer['require'])->not->toHaveKey($adapterComposer['name']);
+        }
+    }
+});
+
+it('loads account setup from the starter adventure presentation adapter', function () {
+    $root = dirname(__DIR__, 2);
+    $page = new ReflectionClass(AccountSetup::class);
+
+    expect($page->getFileName())->toBe($root.'/modules/browser-game-quests-filament/host/src/Filament/App/Pages/AccountSetup.php');
+});
+
+it('loads host team provisioning from the organizations module', function () {
+    $root = dirname(__DIR__, 2);
+    $service = new ReflectionClass(TeamManagementService::class);
+
+    expect($service->getFileName())->toBe($root.'/modules/organizations-teams/host/src/Services/TeamManagementService.php');
 });
 
 it('declares every cross-package Liberu namespace dependency in Composer', function () {

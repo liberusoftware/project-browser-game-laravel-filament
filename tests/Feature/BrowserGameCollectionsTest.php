@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Validation\ValidationException;
+use Liberu\BrowserGame\Collections\Events\CollectionRewardGranted;
 use Liberu\BrowserGame\Collections\Models\CollectionProgress;
 use Liberu\BrowserGame\Collections\Queries\CollectionsQuery;
 use Liberu\BrowserGame\Collections\Support\CollectionsManager;
@@ -18,6 +21,7 @@ beforeEach(function (): void {
 });
 
 it('records collection progress once per idempotency key and grants completion metadata', function (): void {
+    Event::fake([CollectionRewardGranted::class]);
     $manager = app(CollectionsManager::class);
     $collection = $manager->defineCollection('First Steps', 'achievement');
     $entry = $manager->addEntry($collection, 'first-win', 'Win once', 2, ['title' => 'Winner']);
@@ -25,6 +29,7 @@ it('records collection progress once per idempotency key and grants completion m
     $first = $manager->record('player-1', $collection, $entry->entry_key, 1, 'collection-operation-1');
     $duplicate = $manager->record('player-1', $collection, $entry->entry_key, 1, 'collection-operation-1');
     $completed = $manager->record('player-1', $collection, $entry->entry_key, 1, 'collection-operation-2');
+    $afterCompletion = $manager->record('player-1', $collection, $entry->entry_key, 1, 'collection-operation-3');
 
     expect($first->quantity)->toBe(1)
         ->and($duplicate->quantity)->toBe(1)
@@ -32,7 +37,42 @@ it('records collection progress once per idempotency key and grants completion m
         ->and($completed->completion_count)->toBe(1)
         ->and($completed->completed_at)->not->toBeNull()
         ->and($completed->reward_claimed_at)->not->toBeNull()
+        ->and($afterCompletion->completion_count)->toBe(1)
+        ->and($afterCompletion->last_operation_key)->toBe('collection-operation-3')
+        ->and($afterCompletion->collection->is($collection))->toBeTrue()
+        ->and($entry->collection->is($collection))->toBeTrue()
         ->and(CollectionProgress::query()->count())->toBe(1);
+    Event::assertDispatchedTimes(CollectionRewardGranted::class, 1);
+});
+
+it('rejects invalid collection definitions, entries and progress without changing records', function (): void {
+    $manager = app(CollectionsManager::class);
+    $collection = $manager->defineAchievement('Seasonal');
+    expect(fn () => $manager->define(' '))->toThrow(ValidationException::class)
+        ->and(fn () => $manager->defineCollection('Unknown', 'unknown'))->toThrow(ValidationException::class)
+        ->and(fn () => $manager->addEntry($collection, 'wins', 'Wins', 0))->toThrow(ValidationException::class);
+    expect($collection->entries()->exists())->toBeFalse();
+
+    $manager->addEntry($collection, 'wins', 'Wins');
+    expect(fn () => $manager->record('player-1', $collection, 'wins', 0))->toThrow(ValidationException::class);
+    $collection->update(['status' => 'inactive']);
+    expect(fn () => $manager->record('player-1', $collection, 'wins'))->toThrow(ValidationException::class)
+        ->and(CollectionProgress::query()->exists())->toBeFalse();
+});
+
+it('reverses collections lifecycle fields and recreates the collection schema', function (): void {
+    $options = ['--path' => base_path('modules/browser-game-collections/database/migrations'), '--realpath' => true];
+    $progress = 'browser_game_collection_progress';
+
+    $this->artisan('migrate:rollback', $options + ['--step' => 1])->assertSuccessful();
+    expect(Schema::hasColumn($progress, 'completion_count'))->toBeFalse();
+
+    $this->artisan('migrate:rollback', $options + ['--step' => 1])->assertSuccessful();
+    expect(Schema::hasTable($progress))->toBeFalse()
+        ->and(Schema::hasTable('users'))->toBeTrue();
+
+    $this->artisan('migrate', $options)->assertSuccessful();
+    expect(Schema::hasColumn($progress, 'completion_count'))->toBeTrue();
 });
 
 it('resets repeatable collection progress for the next completion', function (): void {

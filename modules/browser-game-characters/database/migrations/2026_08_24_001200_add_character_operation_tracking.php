@@ -18,6 +18,7 @@ return new class() extends Migration
     public function down(): void
     {
         Schema::table('browser_game_characters', function (Blueprint $table): void {
+            $table->dropIndex(['last_operation_key']);
             $table->dropColumn('last_operation_key');
         });
     }

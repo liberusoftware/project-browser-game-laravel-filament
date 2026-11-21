@@ -3,8 +3,12 @@
 namespace App\Providers\Filament;
 
 use App\Filament\ModulePlugins;
+use App\Gameplay\AdventurePanelPlugin;
+use App\Gameplay\ArenaPanelPlugin;
+use App\Gameplay\CommunityPanelPlugin;
+use App\Gameplay\InventoryPanelPlugin;
 use App\Models\User;
-use App\Support\ThemeColors;
+use Liberu\Foundation\Theme\Host\Filament\ThemeColors;
 use BezhanSalleh\FilamentShield\Middleware\SyncShieldTenant;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -89,6 +93,12 @@ class AdminPanelProvider extends PanelProvider
                 SecurityHeaders::class,
             ])
             ->plugins(app(ModulePlugins::class)->forPanel('admin'))
+            ->plugins([
+                new AdventurePanelPlugin(),
+                new ArenaPanelPlugin(),
+                new CommunityPanelPlugin(),
+                new InventoryPanelPlugin(),
+            ])
             ->authMiddleware([
                 Authenticate::class,
             ]);

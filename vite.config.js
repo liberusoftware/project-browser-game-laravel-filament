@@ -1,6 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
+import laravel, { refreshPaths } from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -23,7 +23,11 @@ export default defineConfig({
                 'resources/js/app.js',
                 ...themeInputs,
             ],
-            refresh: true,
+            refresh: [
+                ...refreshPaths,
+                'modules/browser-game-*/host/src/Livewire/**',
+                'modules/browser-game-*/host/resources/views/**',
+            ],
             fonts: [
                 bunny('Instrument Sans', {
                     weights: [400, 500, 600],

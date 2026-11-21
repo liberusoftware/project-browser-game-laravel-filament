@@ -18,7 +18,7 @@ final class CollectionsController extends Controller
     {
         $team = $request->user()?->currentTeam;
         $pageSize = min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100);
-        $items = app(CollectionsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey())->latest()->paginate($pageSize);
+        $items = app(CollectionsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey() === null ? null : (string) $team->getKey())->latest()->paginate($pageSize);
 
         return response()->json($items->through(fn (CollectionsRecord $item): array => $this->resource($item)));
     }

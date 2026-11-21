@@ -17,7 +17,8 @@ final class ModerationAndAnalyticsController extends Controller
     {
         $team = $request->user()?->currentTeam;
         $pageSize = min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100);
-        $items = app(ModerationAndAnalyticsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey())->latest()->paginate($pageSize);
+        $teamId = $team?->getKey();
+        $items = app(ModerationAndAnalyticsQuery::class)->visible($team?->getAttribute('tenant_id'), $teamId === null ? null : (string) $teamId)->latest()->paginate($pageSize);
 
         return response()->json($items->through(fn (ModerationAndAnalyticsRecord $item): array => $this->resource($item)));
     }

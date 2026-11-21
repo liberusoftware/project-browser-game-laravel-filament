@@ -285,6 +285,27 @@ class PublishTests(unittest.TestCase):
         self.assertEqual(sync.package_paths(['modules/example', 'modules/module-example']),
                          {'liberusoftware/example': 'modules/example'})
 
+    def test_host_integration_stays_out_of_independent_package_releases(self):
+        original = sync.source_signature('modules/example', self.real_git('rev-parse', 'HEAD'))
+        host = self.package / 'host'
+        host.mkdir()
+        (host / 'integration.php').write_text('<?php')
+        self.commit('refactor: add application integration')
+        head = self.real_git('rev-parse', 'HEAD')
+
+        self.assertEqual(sync.source_signature('modules/example', head), original)
+        project = self.prepare_consumer()
+        repository = {'type': 'path', 'url': 'modules/*', 'only': ['liberusoftware/example']}
+        project['repositories'] = [repository]
+        Path('composer.json').write_text(json.dumps(project))
+        metadata = {'packages': {'liberusoftware/example': [{'version': 'v1.0.0',
+                     'source': {'reference': 'published-sha'}, 'dist': {'type': 'zip'}}]}}
+        with patch.object(sync, 'request', return_value=metadata):
+            sync.use_packagist()
+
+        project = json.loads(Path('composer.json').read_text())
+        self.assertEqual(project['repositories'], [repository])
+
     def prepare_consumer(self):
         root = {'name': 'liberusoftware/test-project', 'require': {'liberusoftware/example': '^1.0'},
                 'repositories': [{'type': 'path', 'url': 'modules/*'}]}

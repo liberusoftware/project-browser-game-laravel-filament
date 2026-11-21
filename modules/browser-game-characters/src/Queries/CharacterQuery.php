@@ -14,8 +14,10 @@ final class CharacterQuery
         return GameCharacter::query()->where('player_id', $playerId)->when($worldId, fn (Builder $query): Builder => $query->where('world_id', $worldId));
     }
 
-    public function levelForExperience(int $experience): int
+    public function levelForExperience(int $experience, ?int $experiencePerLevel = null): int
     {
-        return max(1, intdiv(max(0, $experience), (int) config('browser-game.characters.experience_multiplier', 100)) + 1);
+        $experiencePerLevel ??= (int) config('browser-game.characters.experience_multiplier', 100);
+
+        return max(1, intdiv(max(0, $experience), $experiencePerLevel) + 1);
     }
 }

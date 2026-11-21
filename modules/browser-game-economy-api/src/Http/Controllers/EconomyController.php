@@ -20,7 +20,7 @@ final class EconomyController extends Controller
     public function index(Request $request): JsonResponse
     {
         $team = $request->user()?->currentTeam;
-        $items = app(EconomyQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey())->latest()->paginate(min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100));
+        $items = app(EconomyQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey() === null ? null : (string) $team->getKey())->latest()->paginate(min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100));
 
         return response()->json($items->through(fn (EconomyRecord $item): array => $this->resource($item)));
     }
@@ -52,7 +52,7 @@ final class EconomyController extends Controller
         $team = $request->user()?->currentTeam;
         $result = app(EconomyManager::class)->transfer((string) $request->user()->getAuthIdentifier(), $data['recipient_id'], $data['currency_code'], (int) $data['amount'], $data['idempotency_key'] ?? null, $team?->getAttribute('tenant_id'), $team?->getKey() === null ? null : (string) $team->getKey());
 
-        return response()->json(['data' => ['debit' => $this->walletResource($result['debit']), 'credit' => $this->walletResource($result['credit'])]]);
+        return response()->json(['data' => ['debit' => $this->ledgerResource($result['debit']), 'credit' => $this->ledgerResource($result['credit'])]]);
     }
 
     public function credit(Request $request): JsonResponse

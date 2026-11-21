@@ -25,7 +25,7 @@ final class CharactersController extends Controller
     {
         $data = $request->validate(['name' => ['required', 'string', 'max:120'], 'race' => ['required', 'string', 'max:80'], 'class' => ['required', 'string', 'max:80'], 'background' => ['nullable', 'string', 'max:120'], 'statistics' => ['array'], 'skills' => ['array']]);
         $team = $request->user()?->currentTeam;
-        $character = app(CharactersManager::class)->create((string) $request->user()->getAuthIdentifier(), $data['name'], $data['race'], $data['class'], $data['background'] ?? null, $data['statistics'] ?? [], $data['skills'] ?? [], null, $team?->getKey(), $team?->getAttribute('tenant_id'));
+        $character = app(CharactersManager::class)->create((string) $request->user()->getAuthIdentifier(), $data['name'], $data['race'], $data['class'], $data['background'] ?? null, $data['statistics'] ?? [], $data['skills'] ?? [], null, $team?->getKey() === null ? null : (string) $team->getKey(), $team?->getAttribute('tenant_id'));
 
         return response()->json(['data' => $this->resource($character)], 201);
     }

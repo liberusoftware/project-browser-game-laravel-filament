@@ -11,6 +11,12 @@
         <testsuite name="Feature">
             <directory>tests/Feature</directory>
         </testsuite>
+        <testsuite name="Modules">
+            <directory>modules/*/host/tests/Integration</directory>
+            <file>modules/integrations/tests/Unit/OptionalMarketingTablesTest.php</file>
+            <file>modules/organizations-teams/tests/Unit/OptionalResourceMigrationsTest.php</file>
+            <file>modules/organizations-teams/tests/Unit/TenantModelDiscoveryTest.php</file>
+        </testsuite>
         <testsuite name="Architecture">
             <directory>tests/Architecture</directory>
         </testsuite>
@@ -19,6 +25,17 @@
         <include>
             <directory>app</directory>
             <directory>modules/*/src</directory>
+            <directory>modules/*/host/src</directory>
+            <directory>modules/*/config</directory>
+            <directory>modules/*/host/config</directory>
+            <directory>modules/*/host/routes</directory>
+            <directory>modules/*/host/database/factories</directory>
+            <directory>modules/*/host/database/migrations</directory>
+            <directory>modules/*/host/database/seeders</directory>
+            <directory>modules/*/routes</directory>
+            <directory>modules/*/database/factories</directory>
+            <directory>modules/*/database/migrations</directory>
+            <directory>modules/*/database/seeders</directory>
         </include>
     </source>
     <php>

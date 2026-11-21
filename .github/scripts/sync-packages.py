@@ -6,6 +6,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
 import os
+from glob import glob
 from pathlib import Path
 import re
 import subprocess
@@ -209,9 +210,16 @@ def changed_packages(before, head):
                    if len(p.split('/')) >= 3})
 
 
+def package_archive(path, head):
+    command = ['git', 'archive', f'{head}:{path}']
+    if str(path).startswith('modules/'):
+        command += ['--', '.', ':(exclude)host']
+    return subprocess.check_output(command)
+
+
 def source_signature(path, head):
     digest = hashlib.sha256()
-    archive = subprocess.check_output(['git', 'archive', f'{head}:{path}'])
+    archive = package_archive(path, head)
     with tarfile.open(fileobj=io.BytesIO(archive)) as source:
         for member in sorted(source.getmembers(), key=lambda item: item.name):
             digest.update(f'{member.name}:{member.mode}:{member.linkname}\0'.encode())
@@ -380,7 +388,7 @@ def publish(path, head, before):
                 previous_release = json.loads(previous_manifest.read_text()).get('version', '')
         if previous and previous.get('name') != package:
             raise RuntimeError(f'{destination} contains a different Composer package')
-        archive = subprocess.check_output(['git', 'archive', f'{head}:{path}'])
+        archive = package_archive(path, head)
         # Only tracked paths are exported; installed vendor files and local secrets stay local.
         git('rm', '-r', '--ignore-unmatch', '--', '.', ':(exclude).github', cwd=target)
         with tarfile.open(fileobj=io.BytesIO(archive)) as source:
@@ -641,7 +649,13 @@ def use_packagist(metadata_cache=None):
         for package in project.get(section, {}):
             if package in releases:
                 project[section][package] = releases[package]['version']
-    project.pop('repositories', None)
+    repositories = project.pop('repositories', [])
+    host_repositories = [
+        repo for repo in repositories
+        if repo.get('type') == 'path' and any(Path(path, 'host').is_dir() for path in glob(repo['url']))
+    ]
+    if host_repositories:
+        project['repositories'] = host_repositories
     for kind in ('modules', 'themes'):
         for composer in Path(kind).glob('*/composer.json'):
             metadata = json.loads(composer.read_text())

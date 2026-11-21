@@ -33,7 +33,9 @@ use Liberu\Foundation\Organizations\Models\Team;
 use Liberu\Foundation\Organizations\Services\CurrentTeamResolver;
 use Liberu\Foundation\Profiles\Actions\UpdateProfile;
 use Liberu\Foundation\Profiles\Data\ProfileUpdate;
+use Liberu\Foundation\RolesPermissions\Contracts\PrivilegedActor;
 use Liberu\Foundation\RolesPermissions\Policies\RolePolicy;
+use Liberu\Foundation\RolesPermissions\Services\AnyTeamRoleLookup;
 use Liberu\Foundation\RolesPermissions\Services\BreakGlass;
 use Liberu\Foundation\Search\Registry\IndexableRegistry;
 use Liberu\Foundation\Search\Services\LocalSearchIndexer;
@@ -170,9 +172,55 @@ it('issues validates and revokes trusted devices', function () {
 
 it('grants and checks emergency authorization', function () {
     $service = new BreakGlass();
-    expect(fn () => $service->grant(1, 'admin', '', new DateTimeImmutable('+1 hour'), true))->toThrow(RuntimeException::class);
+    expect(fn () => $service->grant(1, 'admin', '', new DateTimeImmutable('+1 hour'), true))->toThrow(RuntimeException::class)
+        ->and(fn () => $service->grant(1, 'admin', 'incident', new DateTimeImmutable('+1 hour'), false))->toThrow(RuntimeException::class)
+        ->and(fn () => $service->grant(1, 'admin', 'incident', new DateTimeImmutable('-1 second'), true))->toThrow(RuntimeException::class);
     $id = $service->grant(1, 'admin', 'incident', new DateTimeImmutable('+1 hour'), true);
-    expect($id)->toBeInt()->and($service->active(1, 'admin'))->toBeTrue();
+    expect($id)->toBeInt()->and($service->active(1, 'admin'))->toBeTrue()
+        ->and($service->active(2, 'admin'))->toBeFalse()
+        ->and($service->active(1, 'other'))->toBeFalse();
+    DB::table('authorization_break_glass')->where('id', $id)->update(['revoked_at' => now()]);
+    expect($service->active(1, 'admin'))->toBeFalse();
+});
+
+it('looks up privileged roles across all teams using configured tables and actor identity', function () {
+    $actor = new class() implements PrivilegedActor
+    {
+        public function authorizationIdentifier(): int|string
+        {
+            return 'actor-7';
+        }
+
+        public function authorizationType(): string
+        {
+            return 'staff';
+        }
+
+        public function hasRoleInAnyTeam(string|array $roles): bool
+        {
+            return false;
+        }
+
+        public function isSuperAdmin(): bool
+        {
+            return false;
+        }
+    };
+
+    DB::statement('CREATE TABLE custom_roles (id INTEGER PRIMARY KEY, name TEXT)');
+    DB::statement('CREATE TABLE custom_role_assignments (role_id INTEGER, model_id TEXT, model_type TEXT)');
+    config(['permission.table_names.roles' => 'custom_roles', 'permission.table_names.model_has_roles' => 'custom_role_assignments']);
+    DB::table('custom_roles')->insert([['id' => 1, 'name' => 'admin'], ['id' => 2, 'name' => 'member']]);
+    DB::table('custom_role_assignments')->insert([
+        ['role_id' => 1, 'model_id' => 'actor-7', 'model_type' => 'staff'],
+        ['role_id' => 2, 'model_id' => 'actor-8', 'model_type' => 'staff'],
+    ]);
+    $lookup = new AnyTeamRoleLookup();
+
+    expect($lookup->hasRoleInAnyTeam($actor, []))->toBeFalse()
+        ->and($lookup->hasRoleInAnyTeam($actor, 'admin'))->toBeTrue()
+        ->and($lookup->hasRoleInAnyTeam($actor, ['member', 'admin']))->toBeTrue()
+        ->and($lookup->hasRoleInAnyTeam($actor, ['member']))->toBeFalse();
 });
 
 it('delegates every role policy permission check', function () {

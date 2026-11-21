@@ -163,6 +163,10 @@ final class CompetitionManager
 
                 return $match;
             }
+            if ($match->status !== 'active' || ! in_array($winnerId, [$match->player_a, $match->player_b], true)) {
+                throw ValidationException::withMessages(['winner' => 'The match or winner is invalid.']);
+            }
+
             $winner = $match->competition->entries()->where('actor_id', $winnerId)->lockForUpdate()->firstOrFail();
             $loserId = $match->player_a === $winnerId ? $match->player_b : $match->player_a;
             $loser = $match->competition->entries()->where('actor_id', $loserId)->lockForUpdate()->firstOrFail();

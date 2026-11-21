@@ -20,7 +20,7 @@ final class AccountsController extends Controller
     public function index(Request $request): JsonResponse
     {
         $team = $request->user()?->currentTeam;
-        $items = app(AccountsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey())->latest()->paginate(min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100));
+        $items = app(AccountsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey() === null ? null : (string) $team->getKey())->latest()->paginate(min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100));
 
         return response()->json($items->through(fn (Model $item): array => $this->resource($item)));
     }

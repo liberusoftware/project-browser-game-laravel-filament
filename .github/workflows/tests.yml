@@ -66,10 +66,17 @@ jobs:
       - name: Generate application key
         run: php artisan key:generate
 
-      # Keep the release-scope gate in the command that actually runs Pest. The Laravel
-      # test wrapper accepts this option but does not enforce Pest's minimum threshold.
-      - name: Run tests with the release-scope coverage gate
-        run: XDEBUG_MODE=coverage vendor/bin/pest --coverage --min=100 --coverage-clover=coverage.xml
+      - name: Run tests with the app and module coverage gate
+        run: XDEBUG_MODE=coverage composer test:coverage
+
+      - name: Retain coverage reports
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: php-coverage
+          path: |
+            coverage.xml
+            coverage-html/
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1

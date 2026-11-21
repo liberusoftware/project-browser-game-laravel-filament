@@ -4,7 +4,11 @@ namespace App\Providers\Filament;
 
 use App\Filament\App\Pages\Dashboard;
 use App\Filament\ModulePlugins;
-use App\Support\ThemeColors;
+use App\Gameplay\AdventurePanelPlugin;
+use App\Gameplay\ArenaPanelPlugin;
+use App\Gameplay\CommunityPanelPlugin;
+use App\Gameplay\InventoryPanelPlugin;
+use Liberu\Foundation\Theme\Host\Filament\ThemeColors;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -64,6 +68,12 @@ class AppPanelProvider extends PanelProvider
                 SecurityHeaders::class,
             ])
             ->plugins(app(ModulePlugins::class)->forPanel('app'))
+            ->plugins([
+                new AdventurePanelPlugin(),
+                new ArenaPanelPlugin(),
+                new CommunityPanelPlugin(),
+                new InventoryPanelPlugin(),
+            ])
             ->authMiddleware([
                 Authenticate::class,
             ]);

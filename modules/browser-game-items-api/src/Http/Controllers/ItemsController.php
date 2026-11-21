@@ -17,8 +17,8 @@ final class ItemsController extends Controller
 {
     public function index(Request $request): JsonResponse
     {
-        $team = $request->user()?->currentTeam;
-        $items = app(ItemsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey())->latest()->paginate(min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100));
+        [$tenantId, $teamId] = $this->scope($request);
+        $items = app(ItemsQuery::class)->visible($tenantId, $teamId)->latest()->paginate(min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100));
 
         return response()->json($items->through(fn (Model $item): array => $this->resource($item)));
     }

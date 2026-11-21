@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Liberu\BrowserGame\GameCoreLivewire\Livewire;
 
 use Illuminate\Validation\ValidationException;
-use JsonException;
 use Liberu\BrowserGame\GameCore\Models\GameWorld;
 use Liberu\BrowserGame\GameCore\Queries\GameCoreOverview as OverviewQuery;
 use Liberu\BrowserGame\GameCore\Support\ArrayGameCoreContext;
@@ -171,11 +170,7 @@ final class WorldOverview extends Component
     /** @return array<string, mixed> */
     private function decodePayload(string $payload, string $field): array
     {
-        try {
-            $decoded = json_decode($payload, true, 512, JSON_THROW_ON_ERROR);
-        } catch (JsonException) {
-            throw ValidationException::withMessages([$field => 'The value must contain valid JSON.']);
-        }
+        $decoded = json_decode($payload, true);
 
         if (! is_array($decoded)) {
             throw ValidationException::withMessages([$field => 'The JSON value must be an object.']);

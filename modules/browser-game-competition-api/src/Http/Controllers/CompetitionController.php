@@ -19,7 +19,7 @@ final class CompetitionController extends Controller
     {
         $team = $request->user()?->currentTeam;
         $pageSize = min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100);
-        $items = app(CompetitionQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey())->latest()->paginate($pageSize);
+        $items = app(CompetitionQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey() === null ? null : (string) $team->getKey())->latest()->paginate($pageSize);
 
         return response()->json($items->through(fn (CompetitionRecord $item): array => $this->resource($item)));
     }
@@ -82,7 +82,8 @@ final class CompetitionController extends Controller
     {
         $competition = $this->authorizedCompetition($request, $competition);
         $v = $request->validate(['reason' => ['required', 'string', 'max:1000'], 'match_id' => ['nullable', 'uuid']]);
-        $match = $v['match_id'] === null ? null : CompetitionMatch::query()->where('competition_id', $competition->getKey())->whereKey($v['match_id'])->firstOrFail();
+        $matchId = $v['match_id'] ?? null;
+        $match = $matchId === null ? null : CompetitionMatch::query()->where('competition_id', $competition->getKey())->whereKey($matchId)->firstOrFail();
 
         return response()->json(['data' => $this->flagResource(app(CompetitionManager::class)->flagCollusion($competition, (string) $request->user()->getAuthIdentifier(), $v['reason'], $match))], 201);
     }

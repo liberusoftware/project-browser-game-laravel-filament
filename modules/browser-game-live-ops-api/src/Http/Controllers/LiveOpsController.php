@@ -17,7 +17,7 @@ final class LiveOpsController extends Controller
     {
         $team = $request->user()?->currentTeam;
         $pageSize = min(max($request->integer('page[size]', $request->integer('page_size', 25)), 1), 100);
-        $items = app(LiveOpsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey())->latest()->paginate($pageSize);
+        $items = app(LiveOpsQuery::class)->visible($team?->getAttribute('tenant_id'), $team?->getKey() === null ? null : (string) $team->getKey())->latest()->paginate($pageSize);
 
         return response()->json($items->through(fn (LiveOpsRecord $item): array => $this->resource($item)));
     }

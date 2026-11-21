@@ -33,6 +33,7 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 coverage.xml
+/coverage-html/
 rr
 # .rr.yaml is tracked in git (needed for RoadRunner configuration)
 

@@ -49,7 +49,9 @@ it('exposes every Game Core control-plane mutation through Livewire', function (
         ->set('maintenanceStatus', 'active')
         ->set('maintenanceMessage', 'Maintenance enabled')
         ->call('updateMaintenanceFromForm')
-        ->assertSee('Maintenance state updated.');
+        ->assertSee('Maintenance state updated.')
+        ->call('featureEnabled', 'missing')
+        ->assertReturned(false);
 
     expect(GameClock::query()->where('world_id', $world->getKey())->value('speed'))->toBe('2.000000')
         ->and(GameRuleset::query()->where('world_id', $world->getKey())->value('version'))->toBe(2)
@@ -58,7 +60,7 @@ it('exposes every Game Core control-plane mutation through Livewire', function (
         ->and(GameMaintenanceState::query()->where('world_id', $world->getKey())->value('status'))->toBe('active');
 });
 
-it('rejects malformed Livewire JSON payloads', function (): void {
+it('rejects malformed and scalar Livewire JSON payloads', function (string $payload): void {
     $this->app->register(GameCoreServiceProvider::class);
     $this->app->register(GameCoreLivewireServiceProvider::class);
     $this->artisan('migrate');
@@ -69,7 +71,12 @@ it('rejects malformed Livewire JSON payloads', function (): void {
     $world = app(GameCoreManager::class)->createWorld(new ArrayGameCoreContext((string) $user->getKey(), null, (string) $team->getKey()), 'World', 'world');
 
     Livewire::actingAs($user)->test(WorldOverview::class, ['worldId' => $world->getKey()])
-        ->set('rulesJson', 'not-json')
+        ->set('rulesJson', $payload)
         ->call('publishRulesetFromForm')
         ->assertHasErrors(['rulesJson']);
-});
+
+    expect(GameRuleset::query()->where('world_id', $world->getKey())->exists())->toBeFalse();
+})->with([
+    'malformed JSON' => 'not-json',
+    'scalar JSON' => '"not a ruleset"',
+]);

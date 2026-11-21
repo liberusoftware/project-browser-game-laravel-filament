@@ -4,13 +4,31 @@ includes:
 
 parameters:
 
-    # app/ only. modules/ and themes/ are Composer output — analysing them from
-    # here uses the host's resolution rather than the package's own, and the
-    # package is the only place its source can be analysed against the tree a
-    # consumer actually installs. Each package carries its own measured level in
-    # its tests.yml, as the reusable workflow's phpstan-level input.
+    # Analyse this application and the gameplay code extracted into its path packages.
+    # Published packages own their analysis settings and CI in their source repositories.
     paths:
         - app/
+        - modules/organizations-teams/host/src/
+        - modules/browser-game-combat/host/src/
+        - modules/browser-game-combat-api/host/src/
+        - modules/browser-game-combat-filament/host/src/
+        - modules/browser-game-combat-livewire/host/src/
+        - modules/browser-game-items/host/src/
+        - modules/browser-game-items-api/host/src/
+        - modules/browser-game-items-filament/host/src/
+        - modules/browser-game-items-livewire/host/src/
+        - modules/browser-game-quests/host/src/
+        - modules/browser-game-quests-api/host/src/
+        - modules/browser-game-quests-filament/host/src/
+        - modules/browser-game-quests-livewire/host/src/
+        - modules/browser-game-social/host/src/
+        - modules/browser-game-social-api/host/src/
+        - modules/browser-game-social-filament/host/src/
+        - modules/browser-game-social-livewire/host/src/
+
+    databaseMigrationsPath:
+        - database/migrations/
+        - modules/browser-game-*/host/database/migrations/
 
     # Measured, not aspired to. This was 9 while CI ran phpstan never; app/ has
     # 5 errors at 9, 2 at 6, and none at 5. Level 5 is the first level this code
