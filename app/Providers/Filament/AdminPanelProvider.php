@@ -8,7 +8,6 @@ use App\Gameplay\ArenaPanelPlugin;
 use App\Gameplay\CommunityPanelPlugin;
 use App\Gameplay\InventoryPanelPlugin;
 use App\Models\User;
-use Liberu\Foundation\Theme\Host\Filament\ThemeColors;
 use BezhanSalleh\FilamentShield\Middleware\SyncShieldTenant;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -31,6 +30,7 @@ use Liberu\Foundation\ApplicationCore\Http\Middleware\SecurityHeaders;
 use Liberu\Foundation\Localization\Http\Middleware\SetLocale;
 use Liberu\Foundation\ModuleManagerFilament\Pages\ModuleManagement;
 use Liberu\Foundation\Organizations\Models\Team;
+use Liberu\Foundation\Theme\Host\Filament\ThemeColors;
 
 class AdminPanelProvider extends PanelProvider
 {
