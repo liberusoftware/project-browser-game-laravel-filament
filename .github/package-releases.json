@@ -137,11 +137,19 @@
   },
   "liberusoftware/module-browser-game-accounts-api": {
     "path": "modules/browser-game-accounts-api",
-    "reference": "b368d63569a4e64a7fda4df06e47170e0cc23079",
+    "reference": "5a5ecd399156ff7661d81142261ee0837685822b",
     "repository": "https://github.com/liberusoftware/module-browser-game-accounts-api",
-    "source_signature": "41a41f092e24698f446a9a98095eccc105ce0989301988d22b6cc451d544d8c7",
-    "source_tree": "31e217e84b286b63949ea5a82c2421cffd8d184b",
-    "version": "1.0.1"
+    "source_signature": "64dde8d76fcc1593d09a6adabeb536c7c4ab43b385aca132d0a363756f5f3cc5",
+    "source_tree": "e52e77a501010d65267b8c8e5de0db804da950cc",
+    "version": "1.1.0"
+  },
+  "liberusoftware/module-browser-game-accounts-filament": {
+    "path": "modules/browser-game-accounts-filament",
+    "reference": "ed74ab64a3a21cb537607c1ee26874a13b586e28",
+    "repository": "https://github.com/liberusoftware/module-browser-game-accounts-filament",
+    "source_signature": "240006ad463b85ead4e429f40544953782ad7e2aac5eaeb92222da12875204af",
+    "source_tree": "9de7f6460b30c26f0607932d8ad22add7fe3096c",
+    "version": "1.0.2"
   },
   "liberusoftware/module-browser-game-accounts-livewire": {
     "path": "modules/browser-game-accounts-livewire",
@@ -153,19 +161,19 @@
   },
   "liberusoftware/module-browser-game-characters": {
     "path": "modules/browser-game-characters",
-    "reference": "de2e319e1b56d3702a85fdcb0776ceb5229a7335",
+    "reference": "30a440913042c4ce8dd6beb0bc2f621ce3da6ecd",
     "repository": "https://github.com/liberusoftware/module-browser-game-characters",
-    "source_signature": "f58df0a3e1d1305f7fdf30adb0618241a6d183393bece269ba95fd3da02283d1",
-    "source_tree": "d27bbc20ed2fdf09413454d869afb8320ec93a3e",
-    "version": "1.0.1"
+    "source_signature": "88a3cc0a4e74a949370ff88bb47d4037ec835e345ce4796ecec4397119638f39",
+    "source_tree": "1f78adf45d1f7dcbc31f4c3b9fefad0d2357034e",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-characters-api": {
     "path": "modules/browser-game-characters-api",
-    "reference": "46a6c212e1144646cc5196617508856a165e9dc4",
+    "reference": "31bbd432d318e558982d1807575159402f15f4dc",
     "repository": "https://github.com/liberusoftware/module-browser-game-characters-api",
-    "source_signature": "a85a86981fcb1023daa355a497dbc5db26b9e085e73f9438f388c902e59880d6",
-    "source_tree": "7f5a07b661272ee895cc57ad2d1572e7664c54ca",
-    "version": "1.0.1"
+    "source_signature": "d78ae7e474d8e61ca08ab3bbf368391d302be6d95e997642938dfec44ccb869f",
+    "source_tree": "7d3aeed6c2726ee262579d2cc3de649db3f07257",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-characters-livewire": {
     "path": "modules/browser-game-characters-livewire",
@@ -185,11 +193,11 @@
   },
   "liberusoftware/module-browser-game-collections-api": {
     "path": "modules/browser-game-collections-api",
-    "reference": "2456be359eb771ac52cce171ca6be099adbf6502",
+    "reference": "e854c5c7e263a96f412d4d9d01bd94876e5c256c",
     "repository": "https://github.com/liberusoftware/module-browser-game-collections-api",
-    "source_signature": "1bd8a05569156870e6a2a3b4641d95d9175dd2049034963f9a51259939ba45f9",
-    "source_tree": "595571b3a1731c7b90bd874f7297b8717a227b4e",
-    "version": "1.0.1"
+    "source_signature": "bc19f537e0e4180dd68828a35efe5b076bdb61cf5435837328a070831beb96ba",
+    "source_tree": "c98fbfcacb03df3d99065048d3b2d730180b0f60",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-collections-livewire": {
     "path": "modules/browser-game-collections-livewire",
@@ -233,11 +241,11 @@
   },
   "liberusoftware/module-browser-game-commerce-api": {
     "path": "modules/browser-game-commerce-api",
-    "reference": "6f7aba9f3abad2c3c837ccdd727be3286ec17453",
+    "reference": "96fd16102ac46da1217769a22fee2b55660e7829",
     "repository": "https://github.com/liberusoftware/module-browser-game-commerce-api",
-    "source_signature": "1879d46249134700bdcb409b367b6ef8631c12756f2c8acafba7fbc3b37bad26",
-    "source_tree": "27f8638ab6e0a06ab6296087283fa8df509a42b5",
-    "version": "1.0.1"
+    "source_signature": "54388f659417aec78278277c15de0f513b4b87922f803baee1c0b57a723510fc",
+    "source_tree": "1f6bb1bc220d6170f026a0d07fd02599e723827d",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-commerce-livewire": {
     "path": "modules/browser-game-commerce-livewire",
@@ -249,19 +257,19 @@
   },
   "liberusoftware/module-browser-game-competition": {
     "path": "modules/browser-game-competition",
-    "reference": "9094cec0ce5e200739efebfbd22c17b646ad202c",
+    "reference": "98fd96979d609769a272ccd1e1caf7c68fb1685e",
     "repository": "https://github.com/liberusoftware/module-browser-game-competition",
-    "source_signature": "9a82cbd6e40913f22880c37779cb094c812b959a3be67a6a0ee8448b1f23a0d2",
-    "source_tree": "5ce6d0825a2a19941b56fe04c1611e269bfefa02",
-    "version": "1.0.1"
+    "source_signature": "fecddeb6e182cfa7d1a8344d84df06313d53f151008cf13d989e5a818ad82733",
+    "source_tree": "0a95c2f43244740a1612515cc154698316718c75",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-competition-api": {
     "path": "modules/browser-game-competition-api",
-    "reference": "54bf5b0e171dfac57899f1079d124f2eb2c2a886",
+    "reference": "6a6ac87ec0f7bc7f3a2dd6d4ed24fef6dca9f936",
     "repository": "https://github.com/liberusoftware/module-browser-game-competition-api",
-    "source_signature": "d93afd7acefaafc7734d11c90e3fc6c020b0de0f550890c83f8715ec2ca33a02",
-    "source_tree": "8964141f3c8ba610e481630431b01aaf39b066c4",
-    "version": "1.0.1"
+    "source_signature": "3557b6837e4d1953e75769a078951490430d0a678d6c01bd3f7214f311754c00",
+    "source_tree": "f9ad626dd23daa645b96a2788ca431f83687fd6d",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-competition-livewire": {
     "path": "modules/browser-game-competition-livewire",
@@ -281,11 +289,11 @@
   },
   "liberusoftware/module-browser-game-crafting-api": {
     "path": "modules/browser-game-crafting-api",
-    "reference": "2e1039c539c5e01eca1be899622bfe93355beff7",
+    "reference": "0f9b471748d496ba8ec6e5ee2fe434d9a89c2a22",
     "repository": "https://github.com/liberusoftware/module-browser-game-crafting-api",
-    "source_signature": "61ec04f72faa14e83ec46665af6a365417e54a3f32699379040f65dd22439cdd",
-    "source_tree": "18c5e01904d354cc2483a899a1db580bdef6cebd",
-    "version": "1.0.1"
+    "source_signature": "9bb60114117f14a16e5a6b37097f04e994c11cee6f0187dc093acc51e6af9c03",
+    "source_tree": "86a2a344770e575f9656a217460bfdb300ffc5a7",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-crafting-livewire": {
     "path": "modules/browser-game-crafting-livewire",
@@ -305,11 +313,11 @@
   },
   "liberusoftware/module-browser-game-economy-api": {
     "path": "modules/browser-game-economy-api",
-    "reference": "aec2570b6b59295783fb8b97ce2b9f3942617fb9",
+    "reference": "a1adff80b9611bd560cb5910519e191b7de7308b",
     "repository": "https://github.com/liberusoftware/module-browser-game-economy-api",
-    "source_signature": "7f71d676ac040abdb0eb88ee6452c2bd94b39b9a55ac6e9836fe620069d0c356",
-    "source_tree": "2a803ae75d7295ebb6b92d2500e4434e03b02b41",
-    "version": "1.0.1"
+    "source_signature": "953a0b50fe9f1dbe7bc2cef36d47f1ae6453a7403f90cdcb1a015a8c995afd89",
+    "source_tree": "13f9bafcfeb501ba112981f87cb2ec89d04ab45c",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-economy-livewire": {
     "path": "modules/browser-game-economy-livewire",
@@ -335,13 +343,21 @@
     "source_tree": "e182925408cb73d8d55a1ef32db2d5e6470dde69",
     "version": "1.0.1"
   },
+  "liberusoftware/module-browser-game-game-core-filament": {
+    "path": "modules/browser-game-game-core-filament",
+    "reference": "445b03ce08ac6b5f613b21be3960b34734cd6439",
+    "repository": "https://github.com/liberusoftware/module-browser-game-game-core-filament",
+    "source_signature": "8c5dcec2b54738f42c43941486ddc9ab6939bd971834bfebe477a901f1b6a5f8",
+    "source_tree": "00ac5fc3a8e91c2b02bfa66f1e8fb2aab1b1a606",
+    "version": "1.0.2"
+  },
   "liberusoftware/module-browser-game-game-core-livewire": {
     "path": "modules/browser-game-game-core-livewire",
-    "reference": "a499838fbbd2e479508ffeceed3f7c1ebb8e6b02",
+    "reference": "e7606ebe54b54f732f6ffae7cf43f7082ae02ace",
     "repository": "https://github.com/liberusoftware/module-browser-game-game-core-livewire",
-    "source_signature": "fd43ef7a6bd4e9a255b63a28866dc98a57d23a095dc690121f3596033873792b",
-    "source_tree": "b5053886aca7630b94e381ebdda6eeedd906109b",
-    "version": "1.0.1"
+    "source_signature": "432426e234e64ce88fee35abe0983782d93e2ef166e9ff5f2d552bd825ee8fa7",
+    "source_tree": "b53b22a9039464eaefab0437a1781f31d5f957a0",
+    "version": "1.1.0"
   },
   "liberusoftware/module-browser-game-items": {
     "path": "modules/browser-game-items",
@@ -353,11 +369,19 @@
   },
   "liberusoftware/module-browser-game-items-api": {
     "path": "modules/browser-game-items-api",
-    "reference": "09db47fd8aaeed3c7902f00dc7a9f1c9c70be5a1",
+    "reference": "858dc61d2c93adff2d0804bc90008eaab69dcd6e",
     "repository": "https://github.com/liberusoftware/module-browser-game-items-api",
-    "source_signature": "32ebcba64eee9ad7abf5f997821ccac770e574f3655ef90e2e8daa7019879da8",
-    "source_tree": "1291b2b47f21e5522d517506a5e68d6666941f52",
-    "version": "1.0.1"
+    "source_signature": "8aeecc611f665c9b78fa807c187c91b5fda0b582fcd65ece8116a095b2991da8",
+    "source_tree": "b4be6750a52bab7668af3be3d2a023d073cf3ff0",
+    "version": "1.1.0"
+  },
+  "liberusoftware/module-browser-game-items-filament": {
+    "path": "modules/browser-game-items-filament",
+    "reference": "253a135a5a7db1711f0c1dc5f2c0ca98d4351f4e",
+    "repository": "https://github.com/liberusoftware/module-browser-game-items-filament",
+    "source_signature": "5e0049b57a4c692c2fe8b07c8e210e3769bd57e27a78f745f53cccfdf946c4a1",
+    "source_tree": "875796ed7dcbed023ae979ea353aa90d8a573ccf",
+    "version": "1.0.2"
   },
   "liberusoftware/module-browser-game-items-livewire": {
     "path": "modules/browser-game-items-livewire",
@@ -377,11 +401,19 @@
   },
   "liberusoftware/module-browser-game-live-ops-api": {
     "path": "modules/browser-game-live-ops-api",
-    "reference": "a67a4ab182f8ea7274e19ae347a5db3b5baebcef",
+    "reference": "a7a242b67f7ea523d4759bddc6f73e62543644eb",
     "repository": "https://github.com/liberusoftware/module-browser-game-live-ops-api",
-    "source_signature": "076192219c4403fc882e1784a789605c489510dd7af004b5470944d94fc8d3e6",
-    "source_tree": "9230365c23fcadc9c6a73ec1fcb1b8ad48f951a7",
-    "version": "1.0.1"
+    "source_signature": "25641ebeaf0284659884ee5fdf07d2cdf5ae4afb82db2418b740788c31565634",
+    "source_tree": "3eb7fdb364b4f9a705d2acc7846d701b1a0fe8d2",
+    "version": "1.1.0"
+  },
+  "liberusoftware/module-browser-game-live-ops-filament": {
+    "path": "modules/browser-game-live-ops-filament",
+    "reference": "74c3ec2bcca72d7f06ac65a82fc67e530ff6949a",
+    "repository": "https://github.com/liberusoftware/module-browser-game-live-ops-filament",
+    "source_signature": "6c1a7d110582faab64bedaeb02cefae19884921090446f80e84ae2a95ac06e33",
+    "source_tree": "31902f8d2fa88b4a7efd1d820d2f0653ede02f01",
+    "version": "1.0.2"
   },
   "liberusoftware/module-browser-game-live-ops-livewire": {
     "path": "modules/browser-game-live-ops-livewire",
@@ -401,11 +433,19 @@
   },
   "liberusoftware/module-browser-game-moderation-and-analytics-api": {
     "path": "modules/browser-game-moderation-and-analytics-api",
-    "reference": "461f429c4da2b97ccc4b809a59b9eae0d1016bce",
+    "reference": "57d57ada3d09d83ac4b501b88d7b04dcf2eebdc0",
     "repository": "https://github.com/liberusoftware/module-browser-game-moderation-and-analytics-api",
-    "source_signature": "2289433b124e0437d16fd62c35ee9959cac7bc89dec886c9778b016f6a70d91c",
-    "source_tree": "1ad1adaa28eb2a251c36209a1b20afe802e5ea44",
-    "version": "1.0.1"
+    "source_signature": "da748313246e610040fd28f835a8db75d1dc06992b0aa122ef272ac5e34f8bad",
+    "source_tree": "bcb107c47053c11d5ca789e543be50361ba281a9",
+    "version": "1.1.0"
+  },
+  "liberusoftware/module-browser-game-moderation-and-analytics-filament": {
+    "path": "modules/browser-game-moderation-and-analytics-filament",
+    "reference": "b8adeef95345a3adcaad60e044713092008c6b77",
+    "repository": "https://github.com/liberusoftware/module-browser-game-moderation-and-analytics-filament",
+    "source_signature": "080ae364eb1ea0ea653b62e5fdbcf6282db12f2b9f0b0c529769e09f1d6bab88",
+    "source_tree": "12e6a9400720e87c49857feb6814d34eca22b5ed",
+    "version": "1.0.2"
   },
   "liberusoftware/module-browser-game-moderation-and-analytics-livewire": {
     "path": "modules/browser-game-moderation-and-analytics-livewire",
@@ -449,11 +489,19 @@
   },
   "liberusoftware/module-browser-game-social-api": {
     "path": "modules/browser-game-social-api",
-    "reference": "adf07c1ffaf4eb2b0dd352d43ea149dce398d7a1",
+    "reference": "7c006fd40e0e68ad86037541ed598ba92cefe8aa",
     "repository": "https://github.com/liberusoftware/module-browser-game-social-api",
-    "source_signature": "71671cbc23f31485cfb84cfa80a93db262689c16617d0265637c44073a00a3a2",
-    "source_tree": "d944d99eca169eeca04d224b967c6dcedd8a8319",
-    "version": "1.0.1"
+    "source_signature": "7a4f3aca287e8ef79be1077783e729c2936f7a006f6502dd11baea55d5bdb143",
+    "source_tree": "3c8296dbea791601db370f2368268fda7085e55d",
+    "version": "1.1.0"
+  },
+  "liberusoftware/module-browser-game-social-filament": {
+    "path": "modules/browser-game-social-filament",
+    "reference": "be20408d8c0c447a18f71b7e2f8e5fc1a32da711",
+    "repository": "https://github.com/liberusoftware/module-browser-game-social-filament",
+    "source_signature": "e20c20f71d772866e4efb8c8ac9abff6df8c0176001a8dc90c1ed88e497f7f25",
+    "source_tree": "eba58b62f9566aa02c4d5e5d43dfa242f307053c",
+    "version": "1.0.2"
   },
   "liberusoftware/module-browser-game-social-livewire": {
     "path": "modules/browser-game-social-livewire",
@@ -534,6 +582,38 @@
     "source_signature": "d469d350ee02b7822a5fa89a3d1bcf1bbd06fa4f8e46fc06e6644ffc88c0b8e5",
     "source_tree": "04f69949afdcdb6c12817d536fee1706df06aa5d",
     "version": "1.2.2"
+  },
+  "liberusoftware/theme-base": {
+    "path": "themes/base",
+    "reference": "eee9837aa9b87dd99767e63f6890cd393f3aed2b",
+    "repository": "https://github.com/liberusoftware/theme-base",
+    "source_signature": "030cffc5b41c1e95eab72166d310cf53e279d2a485a001e1fa2217131a889e67",
+    "source_tree": "7e732906610790be80bd8a9b78b310e54bc08a5d",
+    "version": "2.3.0"
+  },
+  "liberusoftware/theme-clear-signal": {
+    "path": "themes/clear-signal",
+    "reference": "500c9b1f8a22e1d64abf2221687fbd5de6e27c76",
+    "repository": "https://github.com/liberusoftware/theme-clear-signal",
+    "source_signature": "ab6c677638897cd78fe7f63c07cad59c284b670aa767a2cfca0e4ce84422ce3f",
+    "source_tree": "3c2087da16a4b0e48c6c8f2810b1d7762d8c5980",
+    "version": "1.9.0"
+  },
+  "liberusoftware/theme-dark": {
+    "path": "themes/dark",
+    "reference": "abc6fa5c8a815b64df3b37a8eecf55cb6bd4c5ee",
+    "repository": "https://github.com/liberusoftware/theme-dark",
+    "source_signature": "d1c433d600b3105e715b6b143d43cc26fef00231ae179e21b009573b05defe13",
+    "source_tree": "16abe0fe8ae81e77e4cffcb608fb131b4d57d35e",
+    "version": "1.10.0"
+  },
+  "liberusoftware/theme-default": {
+    "path": "themes/default",
+    "reference": "981f81f9f72261fc72c0641e554da4f761dba7b0",
+    "repository": "https://github.com/liberusoftware/theme-default",
+    "source_signature": "5a6d5fca80ff251a2bd79cd7c36e9f442b0dd92453745f082d93680797c415db",
+    "source_tree": "d9def70b350f2da2551e9085b79c4e27b8af9a49",
+    "version": "1.11.0"
   },
   "liberusoftware/theme-support-livewire": {
     "path": "modules/theme-support-livewire",
