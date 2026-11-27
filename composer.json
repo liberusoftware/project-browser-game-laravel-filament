@@ -115,7 +115,7 @@
         "liberusoftware/organizations-teams": "^1.15.0",
         "liberusoftware/organizations-teams-filament": "^1.7.0",
         "liberusoftware/profiles": "^1.0",
-        "liberusoftware/roles-permissions": "^1.0",
+        "liberusoftware/roles-permissions": "^1.9.0",
         "liberusoftware/roles-permissions-filament": "^1.0",
         "liberusoftware/scheduler-queues": "^1.0",
         "liberusoftware/search": "^1.0",

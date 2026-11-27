@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "253988ec787ab9b6886dc4065ea005f3",
+    "content-hash": "59d133a1a0dce0ab2479a6bacf843352",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -9777,21 +9777,14 @@
         },
         {
             "name": "liberusoftware/roles-permissions",
-            "version": "1.7.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-roles-permissions.git",
-                "reference": "f1eb827d80c2d085f2752bca85a6f34fd5737300"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-roles-permissions/zipball/f1eb827d80c2d085f2752bca85a6f34fd5737300",
-                "reference": "f1eb827d80c2d085f2752bca85a6f34fd5737300",
-                "shasum": ""
+                "reference": "e877f74e5f53d62314aae9d6383414508d9ab6b7"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
-                "liberusoftware/organizations-teams": "^1.0",
                 "php": "^8.5",
                 "spatie/laravel-permission": "^8.3.2"
             },
@@ -9810,16 +9803,21 @@
                     "Liberu\\Foundation\\RolesPermissions\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\RolesPermissions\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Contextual roles, permissions, policies, and authorization safeguards.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-roles-permissions/issues",
-                "source": "https://github.com/liberusoftware/module-roles-permissions/tree/v1.7.0"
-            },
-            "time": "2026-11-05T21:46:35+00:00"
+            "time": "2026-11-22T04:51:02+00:00"
         },
         {
             "name": "liberusoftware/roles-permissions-filament",
