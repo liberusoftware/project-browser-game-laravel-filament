@@ -4389,31 +4389,31 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v4.4.0",
+            "version": "v4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "a28ea5d4c2b123420562d6a3a233414f84b70774"
+                "reference": "a8f7ef1bd5f8b78159effa1ffae851b0dc72cd8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/a28ea5d4c2b123420562d6a3a233414f84b70774",
-                "reference": "a28ea5d4c2b123420562d6a3a233414f84b70774",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/a8f7ef1bd5f8b78159effa1ffae851b0dc72cd8b",
+                "reference": "a8f7ef1bd5f8b78159effa1ffae851b0dc72cd8b",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "illuminate/console": "^11.0|^12.0|^13.0",
-                "illuminate/contracts": "^11.0|^12.0|^13.0",
-                "illuminate/database": "^11.0|^12.0|^13.0",
-                "illuminate/support": "^11.0|^12.0|^13.0",
+                "illuminate/console": "^12.0|^13.0",
+                "illuminate/contracts": "^12.0|^13.0",
+                "illuminate/database": "^12.0|^13.0",
+                "illuminate/support": "^12.0|^13.0",
                 "php": "^8.2",
                 "symfony/console": "^7.0|^8.0"
             },
             "require-dev": {
                 "jasonmccreary/double": "^1.0",
                 "mockery/mockery": "^1.6",
-                "orchestra/testbench": "^9.15|^10.8|^11.0",
+                "orchestra/testbench": "^10.8|^11.0",
                 "phpstan/phpstan": "^1.10"
             },
             "type": "library",
@@ -4449,7 +4449,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2026-11-02T15:42:32+00:00"
+            "time": "2026-11-11T14:11:40+00:00"
         },
         {
             "name": "laravel/sentinel",
@@ -6686,11 +6686,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-accounts-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-accounts-api.git",
+                "reference": "5a5ecd399156ff7661d81142261ee0837685822b"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-accounts-api",
-                "reference": "5427edc9f3cd96a3cd6db1f5db32a954b039ea5e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-accounts-api/zipball/5a5ecd399156ff7661d81142261ee0837685822b",
+                "reference": "5a5ecd399156ff7661d81142261ee0837685822b",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -6713,23 +6719,17 @@
                     "Liberu\\BrowserGame\\AccountsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Accounts.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-accounts-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-accounts-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-accounts-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-accounts-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-accounts-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:39+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-accounts-filament",
@@ -6825,11 +6825,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-characters",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-characters.git",
+                "reference": "30a440913042c4ce8dd6beb0bc2f621ce3da6ecd"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-characters",
-                "reference": "d54f157b5559520f031709cd31fdcca2b2e119e4"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-characters/zipball/30a440913042c4ce8dd6beb0bc2f621ce3da6ecd",
+                "reference": "30a440913042c4ce8dd6beb0bc2f621ce3da6ecd",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -6852,36 +6858,31 @@
                     "Liberu\\BrowserGame\\Characters\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\Characters\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game character creation, progression, skills, health, and respec.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-characters",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-characters",
-                "issues": "https://github.com/liberusoftware/module-browser-game-characters/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-characters/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-characters"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:46+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-characters-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-characters-api.git",
+                "reference": "31bbd432d318e558982d1807575159402f15f4dc"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-characters-api",
-                "reference": "5b1f3a7117b0c9f3815fdfc1de8abe10995e9ec0"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-characters-api/zipball/31bbd432d318e558982d1807575159402f15f4dc",
+                "reference": "31bbd432d318e558982d1807575159402f15f4dc",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -6904,28 +6905,17 @@
                     "Liberu\\BrowserGame\\CharactersApi\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\CharactersApi\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Characters.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-characters-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-characters-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-characters-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-characters-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-characters-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:50+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-characters-filament",
@@ -7068,11 +7058,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-collections-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-collections-api.git",
+                "reference": "e854c5c7e263a96f412d4d9d01bd94876e5c256c"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-collections-api",
-                "reference": "aa79a2a7083182715d91771bf12e261f07327036"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-collections-api/zipball/e854c5c7e263a96f412d4d9d01bd94876e5c256c",
+                "reference": "e854c5c7e263a96f412d4d9d01bd94876e5c256c",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7095,23 +7091,17 @@
                     "Liberu\\BrowserGame\\CollectionsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Collections.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-collections-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-collections-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-collections-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-collections-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-collections-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:55+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-collections-filament",
@@ -7208,10 +7198,16 @@
         {
             "name": "liberusoftware/module-browser-game-combat",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat.git",
+                "reference": "2704bc4835f0a9ba156e6a4b403fbd8fa6dafb40"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat",
-                "reference": "3b8135834d5ecc6dea539b570e459d8c9ef4367d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat/zipball/2704bc4835f0a9ba156e6a4b403fbd8fa6dafb40",
+                "reference": "2704bc4835f0a9ba156e6a4b403fbd8fa6dafb40",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -7234,36 +7230,31 @@
                     "Liberu\\BrowserGame\\Combat\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\Combat\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game combat turns, abilities, effects, cooldowns, enemies, loot, logs, and simulation.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:15:47+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-combat-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat-api.git",
+                "reference": "83257905e1d1c03787ccad2e010dfa5f0b6235e3"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat-api",
-                "reference": "26f15e2e34fe13fdb9a1fd7e9b04749c52268480"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat-api/zipball/83257905e1d1c03787ccad2e010dfa5f0b6235e3",
+                "reference": "83257905e1d1c03787ccad2e010dfa5f0b6235e3",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7286,31 +7277,31 @@
                     "Liberu\\BrowserGame\\CombatApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Combat.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:15:53+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-combat-filament",
-            "version": "1.0.1",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat-filament.git",
+                "reference": "c7b80ea4261e5cabc65502778435f142976529ea"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat-filament",
-                "reference": "429f0fdcdebaafcad9cda2c70adbebdf89ec0f8d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat-filament/zipball/c7b80ea4261e5cabc65502778435f142976529ea",
+                "reference": "c7b80ea4261e5cabc65502778435f142976529ea",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -7332,31 +7323,31 @@
                     "Liberu\\BrowserGame\\CombatFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Combat.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:13+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-combat-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat-livewire.git",
+                "reference": "776455fd66c192f93d0637bdf2664d1314d739c4"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat-livewire",
-                "reference": "9d3ee65bf2c81cd7dc2038e20d3c8ce7c31b73fb"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat-livewire/zipball/776455fd66c192f93d0637bdf2664d1314d739c4",
+                "reference": "776455fd66c192f93d0637bdf2664d1314d739c4",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-combat": "^1.0",
@@ -7378,23 +7369,17 @@
                     "Liberu\\BrowserGame\\CombatLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Combat.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:16:04+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-commerce",
@@ -7446,10 +7431,16 @@
         {
             "name": "liberusoftware/module-browser-game-commerce-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-commerce-api.git",
+                "reference": "6f7aba9f3abad2c3c837ccdd727be3286ec17453"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-commerce-api",
-                "reference": "c1779e043e5922192399aefb6269efb0d6340850"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-commerce-api/zipball/6f7aba9f3abad2c3c837ccdd727be3286ec17453",
+                "reference": "6f7aba9f3abad2c3c837ccdd727be3286ec17453",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7472,23 +7463,17 @@
                     "Liberu\\BrowserGame\\CommerceApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Commerce.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-commerce-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-commerce-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-commerce-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-commerce-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-commerce-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:16:15+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-commerce-filament",
@@ -7585,10 +7570,16 @@
         {
             "name": "liberusoftware/module-browser-game-competition",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-competition.git",
+                "reference": "9094cec0ce5e200739efebfbd22c17b646ad202c"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-competition",
-                "reference": "92a1045133f65c86fe54fe1a9db79f6af0160ac7"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-competition/zipball/9094cec0ce5e200739efebfbd22c17b646ad202c",
+                "reference": "9094cec0ce5e200739efebfbd22c17b646ad202c",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -7611,31 +7602,31 @@
                     "Liberu\\BrowserGame\\Competition\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game Competition capability.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-competition",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-competition",
-                "issues": "https://github.com/liberusoftware/module-browser-game-competition/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-competition/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-competition"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:16:32+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-competition-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-competition-api.git",
+                "reference": "54bf5b0e171dfac57899f1079d124f2eb2c2a886"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-competition-api",
-                "reference": "569dba576cf2b2e13e07ccaa9707251e430591c2"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-competition-api/zipball/54bf5b0e171dfac57899f1079d124f2eb2c2a886",
+                "reference": "54bf5b0e171dfac57899f1079d124f2eb2c2a886",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7658,23 +7649,17 @@
                     "Liberu\\BrowserGame\\CompetitionApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Competition.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-competition-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-competition-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-competition-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-competition-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-competition-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:16:37+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-competition-filament",
@@ -7818,10 +7803,16 @@
         {
             "name": "liberusoftware/module-browser-game-crafting-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-crafting-api.git",
+                "reference": "2e1039c539c5e01eca1be899622bfe93355beff7"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-crafting-api",
-                "reference": "41343e52883387a4bca4aa8eda5ef1e63af54c51"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-crafting-api/zipball/2e1039c539c5e01eca1be899622bfe93355beff7",
+                "reference": "2e1039c539c5e01eca1be899622bfe93355beff7",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7844,23 +7835,17 @@
                     "Liberu\\BrowserGame\\CraftingApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Crafting.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-crafting-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-crafting-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-crafting-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-crafting-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-crafting-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:16:59+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-crafting-filament",
@@ -8004,10 +7989,16 @@
         {
             "name": "liberusoftware/module-browser-game-economy-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-economy-api.git",
+                "reference": "aec2570b6b59295783fb8b97ce2b9f3942617fb9"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-economy-api",
-                "reference": "59be19a398ca2513d52ba854aa4f763d91cedee8"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-economy-api/zipball/aec2570b6b59295783fb8b97ce2b9f3942617fb9",
+                "reference": "aec2570b6b59295783fb8b97ce2b9f3942617fb9",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8030,23 +8021,17 @@
                     "Liberu\\BrowserGame\\EconomyApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Economy.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-economy-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-economy-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-economy-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-economy-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-economy-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:17:21+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-economy-filament",
@@ -8284,10 +8269,16 @@
         {
             "name": "liberusoftware/module-browser-game-game-core-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-game-core-livewire.git",
+                "reference": "a499838fbbd2e479508ffeceed3f7c1ebb8e6b02"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-game-core-livewire",
-                "reference": "14cde849b9c7f34c86b6c9a40aef33f764c5461c"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-game-core-livewire/zipball/a499838fbbd2e479508ffeceed3f7c1ebb8e6b02",
+                "reference": "a499838fbbd2e479508ffeceed3f7c1ebb8e6b02",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-game-core": "^1.0",
@@ -8309,36 +8300,31 @@
                     "Liberu\\BrowserGame\\GameCoreLivewire\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\GameCoreLivewire\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Game Core.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-game-core-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-game-core-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-game-core-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-game-core-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-game-core-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:33:47+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items.git",
+                "reference": "27c79641a6031d6bdf8e5542d8b90eb664565849"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items",
-                "reference": "fbcbeafbe7e02fbac514ebf0777561edc4a85893"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items/zipball/27c79641a6031d6bdf8e5542d8b90eb664565849",
+                "reference": "27c79641a6031d6bdf8e5542d8b90eb664565849",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -8361,31 +8347,31 @@
                     "Liberu\\BrowserGame\\Items\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game Items capability.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:33:53+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items-api.git",
+                "reference": "09db47fd8aaeed3c7902f00dc7a9f1c9c70be5a1"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items-api",
-                "reference": "2299157e5d44c3657ee6d3eba3654a455c38641c"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items-api/zipball/09db47fd8aaeed3c7902f00dc7a9f1c9c70be5a1",
+                "reference": "09db47fd8aaeed3c7902f00dc7a9f1c9c70be5a1",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8408,31 +8394,31 @@
                     "Liberu\\BrowserGame\\ItemsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Items.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:33:58+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items-filament",
             "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items-filament.git",
+                "reference": "253a135a5a7db1711f0c1dc5f2c0ca98d4351f4e"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items-filament",
-                "reference": "3783a226bb2bcb8f94d047d945d1118a5a9e30d6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items-filament/zipball/253a135a5a7db1711f0c1dc5f2c0ca98d4351f4e",
+                "reference": "253a135a5a7db1711f0c1dc5f2c0ca98d4351f4e",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -8454,31 +8440,31 @@
                     "Liberu\\BrowserGame\\ItemsFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Items.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:18+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items-livewire.git",
+                "reference": "10cb815aea10f1b33e39d84ff1629a908b24824b"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items-livewire",
-                "reference": "57b106e0392079bea97cd8ccd495d6336b4400e2"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items-livewire/zipball/10cb815aea10f1b33e39d84ff1629a908b24824b",
+                "reference": "10cb815aea10f1b33e39d84ff1629a908b24824b",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-items": "^1.0",
@@ -8500,23 +8486,17 @@
                     "Liberu\\BrowserGame\\ItemsLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Items.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:34:10+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-live-ops",
@@ -8568,10 +8548,16 @@
         {
             "name": "liberusoftware/module-browser-game-live-ops-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-live-ops-api.git",
+                "reference": "a67a4ab182f8ea7274e19ae347a5db3b5baebcef"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-live-ops-api",
-                "reference": "173ca4a0a191336a58944c092f064b93f6940402"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-live-ops-api/zipball/a67a4ab182f8ea7274e19ae347a5db3b5baebcef",
+                "reference": "a67a4ab182f8ea7274e19ae347a5db3b5baebcef",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8594,23 +8580,17 @@
                     "Liberu\\BrowserGame\\LiveOpsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game LiveOps.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-live-ops-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-live-ops-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-live-ops-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-live-ops-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-live-ops-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:34:21+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-live-ops-filament",
@@ -8893,10 +8873,16 @@
         {
             "name": "liberusoftware/module-browser-game-quests",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests.git",
+                "reference": "68b53fbd150ba1238f791449b3045d287c6d7504"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests",
-                "reference": "e1ac36d9af83301f7260ad53e7100aafface3a50"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests/zipball/68b53fbd150ba1238f791449b3045d287c6d7504",
+                "reference": "68b53fbd150ba1238f791449b3045d287c6d7504",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -8919,31 +8905,31 @@
                     "Liberu\\BrowserGame\\Quests\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game quest storylines and progress.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:34:58+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-quests-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests-api.git",
+                "reference": "9e7384822a9c92e3f5580b5890e533c3acffdf89"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests-api",
-                "reference": "372b7ca7a8f11aa37308b4b653403f6e1adaee0a"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests-api/zipball/9e7384822a9c92e3f5580b5890e533c3acffdf89",
+                "reference": "9e7384822a9c92e3f5580b5890e533c3acffdf89",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8966,31 +8952,31 @@
                     "Liberu\\BrowserGame\\QuestsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Quests.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:35:03+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-quests-filament",
-            "version": "1.0.1",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests-filament.git",
+                "reference": "e775a7a97b4ca79760214eaebeb2a3c0c43f50f2"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests-filament",
-                "reference": "309b831086fc393673512615af644e1420289498"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests-filament/zipball/e775a7a97b4ca79760214eaebeb2a3c0c43f50f2",
+                "reference": "e775a7a97b4ca79760214eaebeb2a3c0c43f50f2",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -9012,31 +8998,31 @@
                     "Liberu\\BrowserGame\\QuestsFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Quests.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:21+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-quests-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests-livewire.git",
+                "reference": "f296a2636e66e660d0fefc7cf6df97bfa70b6d96"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests-livewire",
-                "reference": "e3d97126302b5514244a1bdaaaa539973a4de84f"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests-livewire/zipball/f296a2636e66e660d0fefc7cf6df97bfa70b6d96",
+                "reference": "f296a2636e66e660d0fefc7cf6df97bfa70b6d96",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-quests": "^1.0",
@@ -9058,31 +9044,31 @@
                     "Liberu\\BrowserGame\\QuestsLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Quests.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:35:13+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social.git",
+                "reference": "fad7dcd5afd9f8a09dc7b935df7d1ab05b6621fe"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social",
-                "reference": "bc62e67ee0d9450cf1276906c74c872265fa84f1"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social/zipball/fad7dcd5afd9f8a09dc7b935df7d1ab05b6621fe",
+                "reference": "fad7dcd5afd9f8a09dc7b935df7d1ab05b6621fe",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -9105,31 +9091,31 @@
                     "Liberu\\BrowserGame\\Social\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game Social capability.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:17:49+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social-api.git",
+                "reference": "adf07c1ffaf4eb2b0dd352d43ea149dce398d7a1"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social-api",
-                "reference": "f6c78e03ec2160689baf88a19f60609debccfd51"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social-api/zipball/adf07c1ffaf4eb2b0dd352d43ea149dce398d7a1",
+                "reference": "adf07c1ffaf4eb2b0dd352d43ea149dce398d7a1",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -9152,31 +9138,31 @@
                     "Liberu\\BrowserGame\\SocialApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Social.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:17:51+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social-filament",
             "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social-filament.git",
+                "reference": "be20408d8c0c447a18f71b7e2f8e5fc1a32da711"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social-filament",
-                "reference": "9f64f19d06adf1b4990b4729b9ed4aae3d4ea0be"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social-filament/zipball/be20408d8c0c447a18f71b7e2f8e5fc1a32da711",
+                "reference": "be20408d8c0c447a18f71b7e2f8e5fc1a32da711",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -9198,31 +9184,31 @@
                     "Liberu\\BrowserGame\\SocialFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Social.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:21+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social-livewire.git",
+                "reference": "e7ab4bd189e6b209ebb2ea7e8cf1f1c6ebed5ea6"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social-livewire",
-                "reference": "caa9ccc9a3e6861ab4560f83d867c0dba275f0c6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social-livewire/zipball/e7ab4bd189e6b209ebb2ea7e8cf1f1c6ebed5ea6",
+                "reference": "e7ab4bd189e6b209ebb2ea7e8cf1f1c6ebed5ea6",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-social": "^1.0",
@@ -9244,23 +9230,17 @@
                     "Liberu\\BrowserGame\\SocialLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Social.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:17:56+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-world",
