@@ -1747,26 +1747,26 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "4.0.4",
+            "version": "4.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa"
+                "reference": "9bef884e12278a7b89b64adbfb9379c021d3c102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa",
-                "reference": "d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/9bef884e12278a7b89b64adbfb9379c021d3c102",
+                "reference": "9bef884e12278a7b89b64adbfb9379c021d3c102",
                 "shasum": ""
             },
             "require": {
-                "doctrine/lexer": "^2.0 || ^3.0",
+                "doctrine/lexer": "^3.0.3",
                 "php": ">=8.1",
-                "symfony/polyfill-intl-idn": "^1.26"
+                "symfony/polyfill-intl-idn": "^1.43"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.2",
-                "vimeo/psalm": "^5.12"
+                "phpunit/phpunit": "^10.5.67",
+                "vimeo/psalm": "^5.26.1"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -1802,7 +1802,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/4.0.4"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.5"
             },
             "funding": [
                 {
@@ -1810,7 +1810,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-06T22:45:56+00:00"
+            "time": "2026-11-22T16:52:20+00:00"
         },
         {
             "name": "evenement/evenement",
@@ -2649,22 +2649,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "8.5.4",
+            "version": "8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "047202b4f2ac14265ad5f9e039932df4efe0d9bf"
+                "reference": "ba6574fd975ab16f87dc356729a36777c03851e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/047202b4f2ac14265ad5f9e039932df4efe0d9bf",
-                "reference": "047202b4f2ac14265ad5f9e039932df4efe0d9bf",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ba6574fd975ab16f87dc356729a36777c03851e8",
+                "reference": "ba6574fd975ab16f87dc356729a36777c03851e8",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^3.1.1",
-                "guzzlehttp/psr7": "^3.5.1",
+                "guzzlehttp/promises": "^3.2",
+                "guzzlehttp/psr7": "^3.6",
                 "php": "^7.4 || ^8.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
@@ -2756,7 +2756,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/8.5.4"
+                "source": "https://github.com/guzzle/guzzle/tree/8.6.0"
             },
             "funding": [
                 {
@@ -2772,7 +2772,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-20T22:56:36+00:00"
+            "time": "2026-11-22T16:48:13+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2860,16 +2860,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "3.5.1",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "ef2058cc884d864affa6ef7cd23a68d45e015c2f"
+                "reference": "1fa0f8319c046b7dec80030460254283d851388e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/ef2058cc884d864affa6ef7cd23a68d45e015c2f",
-                "reference": "ef2058cc884d864affa6ef7cd23a68d45e015c2f",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1fa0f8319c046b7dec80030460254283d851388e",
+                "reference": "1fa0f8319c046b7dec80030460254283d851388e",
                 "shasum": ""
             },
             "require": {
@@ -2961,7 +2961,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/3.5.1"
+                "source": "https://github.com/guzzle/psr7/tree/3.6.0"
             },
             "funding": [
                 {
@@ -2977,7 +2977,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-19T20:35:18+00:00"
+            "time": "2026-11-22T00:00:35+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
@@ -3626,16 +3626,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "72aa7e151062e218704d8660f407e6070040d8bc"
+                "reference": "8a8c4a84852869e13190d89f9da873cd9a70f14c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/72aa7e151062e218704d8660f407e6070040d8bc",
-                "reference": "72aa7e151062e218704d8660f407e6070040d8bc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/8a8c4a84852869e13190d89f9da873cd9a70f14c",
+                "reference": "8a8c4a84852869e13190d89f9da873cd9a70f14c",
                 "shasum": ""
             },
             "require": {
@@ -3744,7 +3744,7 @@
                 "ext-gmp": "*",
                 "fakerphp/faker": "^1.24",
                 "intervention/image": "^4.2",
-                "jasonmccreary/double": "^1.1",
+                "jasonmccreary/double": "^1.2.1",
                 "laravel/pint": "^1.18",
                 "league/flysystem-aws-s3-v3": "^3.25.1",
                 "league/flysystem-ftp": "^3.25.1",
@@ -3855,7 +3855,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-11-17T14:58:33+00:00"
+            "time": "2026-11-24T16:10:06+00:00"
         },
         {
             "name": "laravel/horizon",
@@ -4162,16 +4162,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.27",
+            "version": "v0.3.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2"
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/abdfc75a1ae6c6f21522daed50da7124cbff09d2",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/72247703c4d4ac1d6122955c90433aa9429bd236",
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236",
                 "shasum": ""
             },
             "require": {
@@ -4214,9 +4214,9 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "source": "https://github.com/laravel/prompts/tree/v0.3.27"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.28"
             },
-            "time": "2026-11-09T16:07:10+00:00"
+            "time": "2026-11-23T14:41:10+00:00"
         },
         {
             "name": "laravel/pulse",
@@ -4778,16 +4778,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.10.7",
+            "version": "2.10.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "8eb53e906fd60c67038d22f1f1cab420ed58b8be"
+                "reference": "3e956235b26ea34ea721a302e27eae9a32cb9ef0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/8eb53e906fd60c67038d22f1f1cab420ed58b8be",
-                "reference": "8eb53e906fd60c67038d22f1f1cab420ed58b8be",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/3e956235b26ea34ea721a302e27eae9a32cb9ef0",
+                "reference": "3e956235b26ea34ea721a302e27eae9a32cb9ef0",
                 "shasum": ""
             },
             "require": {
@@ -4881,7 +4881,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-31T13:35:37+00:00"
+            "time": "2026-11-26T14:08:53+00:00"
         },
         {
             "name": "league/config",
@@ -4967,34 +4967,34 @@
         },
         {
             "name": "league/csv",
-            "version": "9.29.0",
+            "version": "9.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "13d5600d2c935c8785707e7d1d44ca1f2a22d6f4"
+                "reference": "710d3c7db4a50691951b0465a10c552e08a56c07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/13d5600d2c935c8785707e7d1d44ca1f2a22d6f4",
-                "reference": "13d5600d2c935c8785707e7d1d44ca1f2a22d6f4",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/710d3c7db4a50691951b0465a10c552e08a56c07",
+                "reference": "710d3c7db4a50691951b0465a10c552e08a56c07",
                 "shasum": ""
             },
             "require": {
                 "ext-filter": "*",
-                "php": "^8.2.0"
+                "php": "^8.3.0"
             },
             "require-dev": {
                 "ext-dom": "*",
                 "ext-xdebug": "*",
-                "friendsofphp/php-cs-fixer": "^3.92.3",
-                "phpbench/phpbench": "^1.4.3",
-                "phpstan/phpstan": "^2.2.8",
+                "friendsofphp/php-cs-fixer": "^3.95.30",
+                "phpbench/phpbench": "^1.7.0",
+                "phpstan/phpstan": "^2.3.6",
                 "phpstan/phpstan-deprecation-rules": "^2.0.5",
-                "phpstan/phpstan-phpunit": "^2.0.18",
-                "phpstan/phpstan-strict-rules": "^2.0.12",
-                "phpunit/phpunit": "^11.5.22 || ^12.5.4 || ^13.3.1",
-                "rector/rector": "^2.6.3",
-                "symfony/var-dumper": "^6.4.8 || ^7.4.0 || ^8.0"
+                "phpstan/phpstan-phpunit": "^2.1.2",
+                "phpstan/phpstan-strict-rules": "^2.1.1",
+                "phpunit/phpunit": "^12.5.4 || ^13.4.7",
+                "rector/rector": "^2.8.5",
+                "symfony/var-dumper": "^7.4.0 || ^8.1.10"
             },
             "suggest": {
                 "ext-dom": "Required to use the XMLConverter and the HTMLConverter classes",
@@ -5058,7 +5058,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-28T08:56:24+00:00"
+            "time": "2026-11-26T06:50:41+00:00"
         },
         {
             "name": "league/flysystem",
@@ -6686,11 +6686,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-accounts-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-accounts-api.git",
+                "reference": "5a5ecd399156ff7661d81142261ee0837685822b"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-accounts-api",
-                "reference": "5427edc9f3cd96a3cd6db1f5db32a954b039ea5e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-accounts-api/zipball/5a5ecd399156ff7661d81142261ee0837685822b",
+                "reference": "5a5ecd399156ff7661d81142261ee0837685822b",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -6713,23 +6719,17 @@
                     "Liberu\\BrowserGame\\AccountsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Accounts.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-accounts-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-accounts-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-accounts-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-accounts-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-accounts-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:39+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-accounts-filament",
@@ -6825,11 +6825,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-characters",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-characters.git",
+                "reference": "30a440913042c4ce8dd6beb0bc2f621ce3da6ecd"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-characters",
-                "reference": "d54f157b5559520f031709cd31fdcca2b2e119e4"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-characters/zipball/30a440913042c4ce8dd6beb0bc2f621ce3da6ecd",
+                "reference": "30a440913042c4ce8dd6beb0bc2f621ce3da6ecd",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -6852,36 +6858,31 @@
                     "Liberu\\BrowserGame\\Characters\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\Characters\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game character creation, progression, skills, health, and respec.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-characters",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-characters",
-                "issues": "https://github.com/liberusoftware/module-browser-game-characters/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-characters/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-characters"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:46+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-characters-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-characters-api.git",
+                "reference": "31bbd432d318e558982d1807575159402f15f4dc"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-characters-api",
-                "reference": "5b1f3a7117b0c9f3815fdfc1de8abe10995e9ec0"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-characters-api/zipball/31bbd432d318e558982d1807575159402f15f4dc",
+                "reference": "31bbd432d318e558982d1807575159402f15f4dc",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -6904,28 +6905,17 @@
                     "Liberu\\BrowserGame\\CharactersApi\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\CharactersApi\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Characters.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-characters-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-characters-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-characters-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-characters-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-characters-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:50+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-characters-filament",
@@ -7068,11 +7058,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-collections-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-collections-api.git",
+                "reference": "e854c5c7e263a96f412d4d9d01bd94876e5c256c"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-collections-api",
-                "reference": "aa79a2a7083182715d91771bf12e261f07327036"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-collections-api/zipball/e854c5c7e263a96f412d4d9d01bd94876e5c256c",
+                "reference": "e854c5c7e263a96f412d4d9d01bd94876e5c256c",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7095,23 +7091,17 @@
                     "Liberu\\BrowserGame\\CollectionsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Collections.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-collections-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-collections-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-collections-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-collections-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-collections-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:17:55+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-collections-filament",
@@ -7208,10 +7198,16 @@
         {
             "name": "liberusoftware/module-browser-game-combat",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat.git",
+                "reference": "2704bc4835f0a9ba156e6a4b403fbd8fa6dafb40"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat",
-                "reference": "3b8135834d5ecc6dea539b570e459d8c9ef4367d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat/zipball/2704bc4835f0a9ba156e6a4b403fbd8fa6dafb40",
+                "reference": "2704bc4835f0a9ba156e6a4b403fbd8fa6dafb40",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -7234,36 +7230,31 @@
                     "Liberu\\BrowserGame\\Combat\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\Combat\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game combat turns, abilities, effects, cooldowns, enemies, loot, logs, and simulation.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:15:47+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-combat-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat-api.git",
+                "reference": "83257905e1d1c03787ccad2e010dfa5f0b6235e3"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat-api",
-                "reference": "26f15e2e34fe13fdb9a1fd7e9b04749c52268480"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat-api/zipball/83257905e1d1c03787ccad2e010dfa5f0b6235e3",
+                "reference": "83257905e1d1c03787ccad2e010dfa5f0b6235e3",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7286,31 +7277,31 @@
                     "Liberu\\BrowserGame\\CombatApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Combat.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:15:53+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-combat-filament",
-            "version": "1.0.1",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat-filament.git",
+                "reference": "c7b80ea4261e5cabc65502778435f142976529ea"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat-filament",
-                "reference": "429f0fdcdebaafcad9cda2c70adbebdf89ec0f8d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat-filament/zipball/c7b80ea4261e5cabc65502778435f142976529ea",
+                "reference": "c7b80ea4261e5cabc65502778435f142976529ea",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -7332,31 +7323,31 @@
                     "Liberu\\BrowserGame\\CombatFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Combat.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:13+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-combat-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-combat-livewire.git",
+                "reference": "776455fd66c192f93d0637bdf2664d1314d739c4"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-combat-livewire",
-                "reference": "9d3ee65bf2c81cd7dc2038e20d3c8ce7c31b73fb"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-combat-livewire/zipball/776455fd66c192f93d0637bdf2664d1314d739c4",
+                "reference": "776455fd66c192f93d0637bdf2664d1314d739c4",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-combat": "^1.0",
@@ -7378,23 +7369,17 @@
                     "Liberu\\BrowserGame\\CombatLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Combat.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-combat-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-combat-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-combat-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-combat-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-combat-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:16:04+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-commerce",
@@ -7445,11 +7430,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-commerce-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-commerce-api.git",
+                "reference": "96fd16102ac46da1217769a22fee2b55660e7829"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-commerce-api",
-                "reference": "c1779e043e5922192399aefb6269efb0d6340850"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-commerce-api/zipball/96fd16102ac46da1217769a22fee2b55660e7829",
+                "reference": "96fd16102ac46da1217769a22fee2b55660e7829",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7472,23 +7463,17 @@
                     "Liberu\\BrowserGame\\CommerceApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Commerce.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-commerce-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-commerce-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-commerce-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-commerce-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-commerce-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:03+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-commerce-filament",
@@ -7584,11 +7569,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-competition",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-competition.git",
+                "reference": "98fd96979d609769a272ccd1e1caf7c68fb1685e"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-competition",
-                "reference": "92a1045133f65c86fe54fe1a9db79f6af0160ac7"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-competition/zipball/98fd96979d609769a272ccd1e1caf7c68fb1685e",
+                "reference": "98fd96979d609769a272ccd1e1caf7c68fb1685e",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -7611,31 +7602,31 @@
                     "Liberu\\BrowserGame\\Competition\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game Competition capability.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-competition",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-competition",
-                "issues": "https://github.com/liberusoftware/module-browser-game-competition/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-competition/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-competition"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:09+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-competition-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-competition-api.git",
+                "reference": "6a6ac87ec0f7bc7f3a2dd6d4ed24fef6dca9f936"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-competition-api",
-                "reference": "569dba576cf2b2e13e07ccaa9707251e430591c2"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-competition-api/zipball/6a6ac87ec0f7bc7f3a2dd6d4ed24fef6dca9f936",
+                "reference": "6a6ac87ec0f7bc7f3a2dd6d4ed24fef6dca9f936",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7658,23 +7649,17 @@
                     "Liberu\\BrowserGame\\CompetitionApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Competition.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-competition-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-competition-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-competition-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-competition-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-competition-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:13+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-competition-filament",
@@ -7817,11 +7802,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-crafting-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-crafting-api.git",
+                "reference": "0f9b471748d496ba8ec6e5ee2fe434d9a89c2a22"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-crafting-api",
-                "reference": "41343e52883387a4bca4aa8eda5ef1e63af54c51"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-crafting-api/zipball/0f9b471748d496ba8ec6e5ee2fe434d9a89c2a22",
+                "reference": "0f9b471748d496ba8ec6e5ee2fe434d9a89c2a22",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -7844,23 +7835,17 @@
                     "Liberu\\BrowserGame\\CraftingApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Crafting.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-crafting-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-crafting-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-crafting-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-crafting-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-crafting-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:19+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-crafting-filament",
@@ -8003,11 +7988,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-economy-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-economy-api.git",
+                "reference": "a1adff80b9611bd560cb5910519e191b7de7308b"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-economy-api",
-                "reference": "59be19a398ca2513d52ba854aa4f763d91cedee8"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-economy-api/zipball/a1adff80b9611bd560cb5910519e191b7de7308b",
+                "reference": "a1adff80b9611bd560cb5910519e191b7de7308b",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8030,23 +8021,17 @@
                     "Liberu\\BrowserGame\\EconomyApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Economy.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-economy-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-economy-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-economy-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-economy-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-economy-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:25+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-economy-filament",
@@ -8283,11 +8268,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-game-core-livewire",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-game-core-livewire.git",
+                "reference": "e7606ebe54b54f732f6ffae7cf43f7082ae02ace"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-game-core-livewire",
-                "reference": "14cde849b9c7f34c86b6c9a40aef33f764c5461c"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-game-core-livewire/zipball/e7606ebe54b54f732f6ffae7cf43f7082ae02ace",
+                "reference": "e7606ebe54b54f732f6ffae7cf43f7082ae02ace",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-game-core": "^1.0",
@@ -8309,36 +8300,31 @@
                     "Liberu\\BrowserGame\\GameCoreLivewire\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Liberu\\BrowserGame\\GameCoreLivewire\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Game Core.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-game-core-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-game-core-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-game-core-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-game-core-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-game-core-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:33+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items.git",
+                "reference": "27c79641a6031d6bdf8e5542d8b90eb664565849"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items",
-                "reference": "fbcbeafbe7e02fbac514ebf0777561edc4a85893"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items/zipball/27c79641a6031d6bdf8e5542d8b90eb664565849",
+                "reference": "27c79641a6031d6bdf8e5542d8b90eb664565849",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -8361,31 +8347,31 @@
                     "Liberu\\BrowserGame\\Items\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game Items capability.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:33:53+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items-api.git",
+                "reference": "858dc61d2c93adff2d0804bc90008eaab69dcd6e"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items-api",
-                "reference": "2299157e5d44c3657ee6d3eba3654a455c38641c"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items-api/zipball/858dc61d2c93adff2d0804bc90008eaab69dcd6e",
+                "reference": "858dc61d2c93adff2d0804bc90008eaab69dcd6e",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8408,31 +8394,31 @@
                     "Liberu\\BrowserGame\\ItemsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Items.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:37+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items-filament",
             "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items-filament.git",
+                "reference": "253a135a5a7db1711f0c1dc5f2c0ca98d4351f4e"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items-filament",
-                "reference": "3783a226bb2bcb8f94d047d945d1118a5a9e30d6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items-filament/zipball/253a135a5a7db1711f0c1dc5f2c0ca98d4351f4e",
+                "reference": "253a135a5a7db1711f0c1dc5f2c0ca98d4351f4e",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -8454,31 +8440,31 @@
                     "Liberu\\BrowserGame\\ItemsFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Items.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:18+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-items-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-items-livewire.git",
+                "reference": "10cb815aea10f1b33e39d84ff1629a908b24824b"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-items-livewire",
-                "reference": "57b106e0392079bea97cd8ccd495d6336b4400e2"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-items-livewire/zipball/10cb815aea10f1b33e39d84ff1629a908b24824b",
+                "reference": "10cb815aea10f1b33e39d84ff1629a908b24824b",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-items": "^1.0",
@@ -8500,23 +8486,17 @@
                     "Liberu\\BrowserGame\\ItemsLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Items.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-items-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-items-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-items-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-items-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-items-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:34:10+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-live-ops",
@@ -8567,11 +8547,17 @@
         },
         {
             "name": "liberusoftware/module-browser-game-live-ops-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-live-ops-api.git",
+                "reference": "a7a242b67f7ea523d4759bddc6f73e62543644eb"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-live-ops-api",
-                "reference": "173ca4a0a191336a58944c092f064b93f6940402"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-live-ops-api/zipball/a7a242b67f7ea523d4759bddc6f73e62543644eb",
+                "reference": "a7a242b67f7ea523d4759bddc6f73e62543644eb",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8594,23 +8580,17 @@
                     "Liberu\\BrowserGame\\LiveOpsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game LiveOps.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-live-ops-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-live-ops-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-live-ops-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-live-ops-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-live-ops-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:44+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-live-ops-filament",
@@ -8893,10 +8873,16 @@
         {
             "name": "liberusoftware/module-browser-game-quests",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests.git",
+                "reference": "68b53fbd150ba1238f791449b3045d287c6d7504"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests",
-                "reference": "e1ac36d9af83301f7260ad53e7100aafface3a50"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests/zipball/68b53fbd150ba1238f791449b3045d287c6d7504",
+                "reference": "68b53fbd150ba1238f791449b3045d287c6d7504",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -8919,31 +8905,31 @@
                     "Liberu\\BrowserGame\\Quests\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game quest storylines and progress.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:34:58+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-quests-api",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests-api.git",
+                "reference": "9e7384822a9c92e3f5580b5890e533c3acffdf89"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests-api",
-                "reference": "372b7ca7a8f11aa37308b4b653403f6e1adaee0a"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests-api/zipball/9e7384822a9c92e3f5580b5890e533c3acffdf89",
+                "reference": "9e7384822a9c92e3f5580b5890e533c3acffdf89",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -8966,31 +8952,31 @@
                     "Liberu\\BrowserGame\\QuestsApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Quests.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:35:03+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-quests-filament",
-            "version": "1.0.1",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests-filament.git",
+                "reference": "e775a7a97b4ca79760214eaebeb2a3c0c43f50f2"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests-filament",
-                "reference": "309b831086fc393673512615af644e1420289498"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests-filament/zipball/e775a7a97b4ca79760214eaebeb2a3c0c43f50f2",
+                "reference": "e775a7a97b4ca79760214eaebeb2a3c0c43f50f2",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -9012,31 +8998,31 @@
                     "Liberu\\BrowserGame\\QuestsFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Quests.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:21+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-quests-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-quests-livewire.git",
+                "reference": "f296a2636e66e660d0fefc7cf6df97bfa70b6d96"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-quests-livewire",
-                "reference": "e3d97126302b5514244a1bdaaaa539973a4de84f"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-quests-livewire/zipball/f296a2636e66e660d0fefc7cf6df97bfa70b6d96",
+                "reference": "f296a2636e66e660d0fefc7cf6df97bfa70b6d96",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-quests": "^1.0",
@@ -9058,31 +9044,31 @@
                     "Liberu\\BrowserGame\\QuestsLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Quests.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-quests-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-quests-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-quests-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-quests-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-quests-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-27T11:35:13+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social.git",
+                "reference": "fad7dcd5afd9f8a09dc7b935df7d1ab05b6621fe"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social",
-                "reference": "bc62e67ee0d9450cf1276906c74c872265fa84f1"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social/zipball/fad7dcd5afd9f8a09dc7b935df7d1ab05b6621fe",
+                "reference": "fad7dcd5afd9f8a09dc7b935df7d1ab05b6621fe",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -9105,31 +9091,31 @@
                     "Liberu\\BrowserGame\\Social\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Provider-neutral Browser Game Social capability.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:17:49+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social-api",
-            "version": "1.0.1",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social-api.git",
+                "reference": "7c006fd40e0e68ad86037541ed598ba92cefe8aa"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social-api",
-                "reference": "f6c78e03ec2160689baf88a19f60609debccfd51"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social-api/zipball/7c006fd40e0e68ad86037541ed598ba92cefe8aa",
+                "reference": "7c006fd40e0e68ad86037541ed598ba92cefe8aa",
+                "shasum": ""
             },
             "require": {
                 "illuminate/http": "^13.38.0",
@@ -9152,31 +9138,31 @@
                     "Liberu\\BrowserGame\\SocialApi\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "HTTP API adapter for Browser Game Social.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social-api",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social-api",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social-api/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social-api/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social-api"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-21T18:18:58+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social-filament",
             "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social-filament.git",
+                "reference": "be20408d8c0c447a18f71b7e2f8e5fc1a32da711"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social-filament",
-                "reference": "9f64f19d06adf1b4990b4729b9ed4aae3d4ea0be"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social-filament/zipball/be20408d8c0c447a18f71b7e2f8e5fc1a32da711",
+                "reference": "be20408d8c0c447a18f71b7e2f8e5fc1a32da711",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -9198,31 +9184,31 @@
                     "Liberu\\BrowserGame\\SocialFilament\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Filament 5 adapter for Browser Game Social.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social-filament",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social-filament",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social-filament/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social-filament/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social-filament"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-11-14T14:26:21+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-social-livewire",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-browser-game-social-livewire.git",
+                "reference": "e7ab4bd189e6b209ebb2ea7e8cf1f1c6ebed5ea6"
+            },
             "dist": {
-                "type": "path",
-                "url": "modules/browser-game-social-livewire",
-                "reference": "caa9ccc9a3e6861ab4560f83d867c0dba275f0c6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-browser-game-social-livewire/zipball/e7ab4bd189e6b209ebb2ea7e8cf1f1c6ebed5ea6",
+                "reference": "e7ab4bd189e6b209ebb2ea7e8cf1f1c6ebed5ea6",
+                "shasum": ""
             },
             "require": {
                 "liberusoftware/module-browser-game-social": "^1.0",
@@ -9244,23 +9230,17 @@
                     "Liberu\\BrowserGame\\SocialLivewire\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "pest"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Livewire 4 adapter for Browser Game Social.",
             "homepage": "https://github.com/liberusoftware/module-browser-game-social-livewire",
             "support": {
-                "source": "https://github.com/liberusoftware/module-browser-game-social-livewire",
-                "issues": "https://github.com/liberusoftware/module-browser-game-social-livewire/issues"
+                "issues": "https://github.com/liberusoftware/module-browser-game-social-livewire/issues",
+                "source": "https://github.com/liberusoftware/module-browser-game-social-livewire"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-26T23:17:56+00:00"
         },
         {
             "name": "liberusoftware/module-browser-game-world",
@@ -9450,11 +9430,11 @@
         },
         {
             "name": "liberusoftware/module-manager",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-module-manager.git",
-                "reference": "c69eebdbce56bbaf54be6926a6ae623b065eeb2b"
+                "reference": "8451fdf2eb0764c1d3ae341945a2a8f5592df9af"
             },
             "require": {
                 "composer/semver": "^3.5.2",
@@ -9492,21 +9472,15 @@
                 "MIT"
             ],
             "description": "Deterministic manifest discovery and runtime enablement for Liberu modules.",
-            "time": "2026-11-21T17:59:31+00:00"
+            "time": "2026-11-22T12:02:29+00:00"
         },
         {
             "name": "liberusoftware/module-manager-filament",
-            "version": "1.11.1",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-module-manager-filament.git",
-                "reference": "f6bdb12c7ce76e2a00c03ed9456fb8d23d3041e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-module-manager-filament/zipball/f6bdb12c7ce76e2a00c03ed9456fb8d23d3041e8",
-                "reference": "f6bdb12c7ce76e2a00c03ed9456fb8d23d3041e8",
-                "shasum": ""
+                "reference": "6f98f21c6a99ab7e512b8606975df4b01a975de2"
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -9529,16 +9503,21 @@
                     "Liberu\\Foundation\\ModuleManagerFilament\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\ModuleManagerFilament\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Filament page for enabling and disabling Liberu feature modules.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-module-manager-filament/issues",
-                "source": "https://github.com/liberusoftware/module-module-manager-filament/tree/v1.11.1"
-            },
-            "time": "2026-11-14T17:21:33+00:00"
+            "time": "2026-11-21T17:59:35+00:00"
         },
         {
             "name": "liberusoftware/notifications",
@@ -10671,16 +10650,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v4.4.9",
+            "version": "v4.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "4daad339bc7a572946d48efaf2955030c94daf80"
+                "reference": "33bd7d18b52d787b107bb7da9911be3c392b88c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/4daad339bc7a572946d48efaf2955030c94daf80",
-                "reference": "4daad339bc7a572946d48efaf2955030c94daf80",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/33bd7d18b52d787b107bb7da9911be3c392b88c3",
+                "reference": "33bd7d18b52d787b107bb7da9911be3c392b88c3",
                 "shasum": ""
             },
             "require": {
@@ -10735,7 +10714,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v4.4.9"
+                "source": "https://github.com/livewire/livewire/tree/v4.4.10"
             },
             "funding": [
                 {
@@ -10743,7 +10722,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-21T01:02:00+00:00"
+            "time": "2026-11-24T13:59:35+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -12007,16 +11986,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "af8e840551031d254cfdb3a18a62c3470a309c10"
+                "reference": "f80e753caa465ab4f93cb265ae32e2e8cb02c3f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/af8e840551031d254cfdb3a18a62c3470a309c10",
-                "reference": "af8e840551031d254cfdb3a18a62c3470a309c10",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/f80e753caa465ab4f93cb265ae32e2e8cb02c3f3",
+                "reference": "f80e753caa465ab4f93cb265ae32e2e8cb02c3f3",
                 "shasum": ""
             },
             "require": {
@@ -12048,9 +12027,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.4.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.4.2"
             },
-            "time": "2026-10-30T19:36:28+00:00"
+            "time": "2026-11-25T13:45:51+00:00"
         },
         {
             "name": "pragmarx/google2fa",
@@ -15321,23 +15300,23 @@
         },
         {
             "name": "symfony/console",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5a315b092b81f3e920e9daea1a2ae4c66ed298b9"
+                "reference": "20d14376137e111569de1f62ba4274731a9c9345"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5a315b092b81f3e920e9daea1a2ae4c66ed298b9",
-                "reference": "5a315b092b81f3e920e9daea1a2ae4c66ed298b9",
+                "url": "https://api.github.com/repos/symfony/console/zipball/20d14376137e111569de1f62ba4274731a9c9345",
+                "reference": "20d14376137e111569de1f62ba4274731a9c9345",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.4.1",
                 "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/polyfill-mbstring": "^1.0",
-                "symfony/polyfill-php85": "^1.32",
+                "symfony/polyfill-php85": "^1.33",
                 "symfony/service-contracts": "^2.5|^3",
                 "symfony/string": "^7.4.6|^8.0.6"
             },
@@ -15397,7 +15376,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v8.1.11"
+                "source": "https://github.com/symfony/console/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -15417,7 +15396,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-04T07:07:11+00:00"
+            "time": "2026-11-24T15:59:55+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -15808,16 +15787,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "a2902e479ba5691d20d51d100a715ea19ad2c837"
+                "reference": "7022913b72c56ac5123922726aa94f2f98b726ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/a2902e479ba5691d20d51d100a715ea19ad2c837",
-                "reference": "a2902e479ba5691d20d51d100a715ea19ad2c837",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/7022913b72c56ac5123922726aa94f2f98b726ad",
+                "reference": "7022913b72c56ac5123922726aa94f2f98b726ad",
                 "shasum": ""
             },
             "require": {
@@ -15852,7 +15831,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v8.1.11"
+                "source": "https://github.com/symfony/finder/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -15872,20 +15851,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-02T10:58:30+00:00"
+            "time": "2026-11-24T15:06:41+00:00"
         },
         {
             "name": "symfony/html-sanitizer",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/html-sanitizer.git",
-                "reference": "1ecf13d98b75f5d8a2dcc1ffecde7184d29506ef"
+                "reference": "dabda9c20d51beaaeadb08f1bd50c124fa08bfb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/1ecf13d98b75f5d8a2dcc1ffecde7184d29506ef",
-                "reference": "1ecf13d98b75f5d8a2dcc1ffecde7184d29506ef",
+                "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/dabda9c20d51beaaeadb08f1bd50c124fa08bfb9",
+                "reference": "dabda9c20d51beaaeadb08f1bd50c124fa08bfb9",
                 "shasum": ""
             },
             "require": {
@@ -15924,7 +15903,7 @@
                 "sanitizer"
             ],
             "support": {
-                "source": "https://github.com/symfony/html-sanitizer/tree/v8.1.11"
+                "source": "https://github.com/symfony/html-sanitizer/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -15944,7 +15923,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-04T08:39:20+00:00"
+            "time": "2026-11-24T18:01:43+00:00"
         },
         {
             "name": "symfony/http-client",
@@ -16127,16 +16106,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "30fa3efe6e736b0d06f5331cc6abe813582c0a26"
+                "reference": "8061f6d6b6ec8fc5075b5f39c8ddca83110da9c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/30fa3efe6e736b0d06f5331cc6abe813582c0a26",
-                "reference": "30fa3efe6e736b0d06f5331cc6abe813582c0a26",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/8061f6d6b6ec8fc5075b5f39c8ddca83110da9c6",
+                "reference": "8061f6d6b6ec8fc5075b5f39c8ddca83110da9c6",
                 "shasum": ""
             },
             "require": {
@@ -16184,7 +16163,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v8.1.11"
+                "source": "https://github.com/symfony/http-foundation/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -16204,20 +16183,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-04T08:39:20+00:00"
+            "time": "2026-11-24T18:01:43+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "460658504e26a2794aa614b4fbe6cf9bac2076fe"
+                "reference": "cd6146b67375122b050c25cfb1a49b6fe6fc4adb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/460658504e26a2794aa614b4fbe6cf9bac2076fe",
-                "reference": "460658504e26a2794aa614b4fbe6cf9bac2076fe",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/cd6146b67375122b050c25cfb1a49b6fe6fc4adb",
+                "reference": "cd6146b67375122b050c25cfb1a49b6fe6fc4adb",
                 "shasum": ""
             },
             "require": {
@@ -16226,11 +16205,11 @@
                 "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/error-handler": "^7.4|^8.0",
                 "symfony/event-dispatcher": "^7.4|^8.0",
-                "symfony/http-foundation": "^7.4|^8.0",
+                "symfony/http-foundation": "^7.4.24|^8.1.12",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
-                "symfony/dependency-injection": "<8.1",
+                "symfony/dependency-injection": "<8.1.12",
                 "symfony/flex": "<2.10",
                 "symfony/http-client-contracts": "<2.5",
                 "symfony/serializer": "<7.4.15|>=8.0,<8.0.15|>=8.1,<8.1.2",
@@ -16294,7 +16273,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v8.1.11"
+                "source": "https://github.com/symfony/http-kernel/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -16314,20 +16293,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-04T11:29:46+00:00"
+            "time": "2026-11-25T09:27:11+00:00"
         },
         {
             "name": "symfony/mailer",
-            "version": "v8.1.10",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "4ba81a8f04fbf0bb1691f7bff760b301f1956fd7"
+                "reference": "535515ab0bdc7efbfb7161fe23c6bf7434e26b93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/4ba81a8f04fbf0bb1691f7bff760b301f1956fd7",
-                "reference": "4ba81a8f04fbf0bb1691f7bff760b301f1956fd7",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/535515ab0bdc7efbfb7161fe23c6bf7434e26b93",
+                "reference": "535515ab0bdc7efbfb7161fe23c6bf7434e26b93",
                 "shasum": ""
             },
             "require": {
@@ -16374,7 +16353,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v8.1.10"
+                "source": "https://github.com/symfony/mailer/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -16394,20 +16373,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-23T17:06:53+00:00"
+            "time": "2026-11-24T18:01:43+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v8.1.10",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "8d1232052c9cdef170ed9608b3147bca4f61ff69"
+                "reference": "4bf4ecda5ac1f1db2e9a0793675d2fc69d7cc864"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/8d1232052c9cdef170ed9608b3147bca4f61ff69",
-                "reference": "8d1232052c9cdef170ed9608b3147bca4f61ff69",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/4bf4ecda5ac1f1db2e9a0793675d2fc69d7cc864",
+                "reference": "4bf4ecda5ac1f1db2e9a0793675d2fc69d7cc864",
                 "shasum": ""
             },
             "require": {
@@ -16460,7 +16439,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v8.1.10"
+                "source": "https://github.com/symfony/mime/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -16480,7 +16459,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-28T17:58:38+00:00"
+            "time": "2026-11-24T16:43:41+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -17636,16 +17615,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v8.1.10",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "08aa69fa0998bb65a089f9e148a2c0f8b391398e"
+                "reference": "4969fe2cf92f0075b070ab2bc0faef2734114bae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/08aa69fa0998bb65a089f9e148a2c0f8b391398e",
-                "reference": "08aa69fa0998bb65a089f9e148a2c0f8b391398e",
+                "url": "https://api.github.com/repos/symfony/process/zipball/4969fe2cf92f0075b070ab2bc0faef2734114bae",
+                "reference": "4969fe2cf92f0075b070ab2bc0faef2734114bae",
                 "shasum": ""
             },
             "require": {
@@ -17677,7 +17656,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v8.1.10"
+                "source": "https://github.com/symfony/process/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -17697,20 +17676,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-25T14:40:25+00:00"
+            "time": "2026-11-23T09:20:57+00:00"
         },
         {
             "name": "symfony/property-access",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "d080c2afa37114d46e4f950ed8593667f01f7cab"
+                "reference": "9fa222376100d95cf2fbd3219bbf2c66e2165461"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/d080c2afa37114d46e4f950ed8593667f01f7cab",
-                "reference": "d080c2afa37114d46e4f950ed8593667f01f7cab",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/9fa222376100d95cf2fbd3219bbf2c66e2165461",
+                "reference": "9fa222376100d95cf2fbd3219bbf2c66e2165461",
                 "shasum": ""
             },
             "require": {
@@ -17758,7 +17737,7 @@
                 "reflection"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-access/tree/v8.1.11"
+                "source": "https://github.com/symfony/property-access/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -17778,26 +17757,26 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-01T19:30:44+00:00"
+            "time": "2026-11-23T20:28:13+00:00"
         },
         {
             "name": "symfony/property-info",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "b5afa379a5b54f15a594c1d45ceaa19969d38a16"
+                "reference": "db26e0db6bb2b548c25b48e3a407c43aaa0fcb1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/b5afa379a5b54f15a594c1d45ceaa19969d38a16",
-                "reference": "b5afa379a5b54f15a594c1d45ceaa19969d38a16",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/db26e0db6bb2b548c25b48e3a407c43aaa0fcb1e",
+                "reference": "db26e0db6bb2b548c25b48e3a407c43aaa0fcb1e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.4.1",
                 "symfony/string": "^7.4|^8.0",
-                "symfony/type-info": "^7.4.7|^8.0.7"
+                "symfony/type-info": "^7.4.24|^8.1.12"
             },
             "conflict": {
                 "phpdocumentor/reflection-docblock": "<5.2|>=7",
@@ -17844,7 +17823,7 @@
                 "validator"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-info/tree/v8.1.11"
+                "source": "https://github.com/symfony/property-info/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -17864,7 +17843,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-02T10:58:30+00:00"
+            "time": "2026-11-23T20:28:13+00:00"
         },
         {
             "name": "symfony/psr-http-message-bridge",
@@ -17955,16 +17934,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "f3fefc6cad3748d538be970ca81b71f06d7aa8b3"
+                "reference": "55df7515cdd7769113e46dbeba7942c1ccab8590"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/f3fefc6cad3748d538be970ca81b71f06d7aa8b3",
-                "reference": "f3fefc6cad3748d538be970ca81b71f06d7aa8b3",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/55df7515cdd7769113e46dbeba7942c1ccab8590",
+                "reference": "55df7515cdd7769113e46dbeba7942c1ccab8590",
                 "shasum": ""
             },
             "require": {
@@ -18011,7 +17990,7 @@
                 "url"
             ],
             "support": {
-                "source": "https://github.com/symfony/routing/tree/v8.1.11"
+                "source": "https://github.com/symfony/routing/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -18031,20 +18010,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-04T08:39:20+00:00"
+            "time": "2026-11-24T18:01:43+00:00"
         },
         {
             "name": "symfony/serializer",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "05624c94507c3acf065b6486bb626f0d741af459"
+                "reference": "0d8d656317c5213a0858ad7868fe19e0072f094f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/05624c94507c3acf065b6486bb626f0d741af459",
-                "reference": "05624c94507c3acf065b6486bb626f0d741af459",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/0d8d656317c5213a0858ad7868fe19e0072f094f",
+                "reference": "0d8d656317c5213a0858ad7868fe19e0072f094f",
                 "shasum": ""
             },
             "require": {
@@ -18110,7 +18089,7 @@
             "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/serializer/tree/v8.1.11"
+                "source": "https://github.com/symfony/serializer/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -18130,7 +18109,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-04T08:39:20+00:00"
+            "time": "2026-11-24T18:01:43+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -18221,16 +18200,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v8.1.10",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "6c6110979c0150393bbb336170e286d51ab4d76c"
+                "reference": "b3f937ce8203f33efea3cce084ad4a9f0cce97c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/6c6110979c0150393bbb336170e286d51ab4d76c",
-                "reference": "6c6110979c0150393bbb336170e286d51ab4d76c",
+                "url": "https://api.github.com/repos/symfony/string/zipball/b3f937ce8203f33efea3cce084ad4a9f0cce97c5",
+                "reference": "b3f937ce8203f33efea3cce084ad4a9f0cce97c5",
                 "shasum": ""
             },
             "require": {
@@ -18287,7 +18266,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v8.1.10"
+                "source": "https://github.com/symfony/string/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -18307,20 +18286,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-23T17:06:53+00:00"
+            "time": "2026-11-24T15:59:55+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "d065adf56e5508293e80d7c140b0a9e043b63e9c"
+                "reference": "413000a518ef8c989696b7c9b0f75cb2c29779af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/d065adf56e5508293e80d7c140b0a9e043b63e9c",
-                "reference": "d065adf56e5508293e80d7c140b0a9e043b63e9c",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/413000a518ef8c989696b7c9b0f75cb2c29779af",
+                "reference": "413000a518ef8c989696b7c9b0f75cb2c29779af",
                 "shasum": ""
             },
             "require": {
@@ -18380,7 +18359,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v8.1.11"
+                "source": "https://github.com/symfony/translation/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -18400,7 +18379,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-01T22:27:46+00:00"
+            "time": "2026-11-24T16:43:41+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -18486,16 +18465,16 @@
         },
         {
             "name": "symfony/type-info",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/type-info.git",
-                "reference": "9fd1414061c4bbf953bcfc183b133cbfa0a73c73"
+                "reference": "3e38aea07b658dee29691be8f3c3510bee88782c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/type-info/zipball/9fd1414061c4bbf953bcfc183b133cbfa0a73c73",
-                "reference": "9fd1414061c4bbf953bcfc183b133cbfa0a73c73",
+                "url": "https://api.github.com/repos/symfony/type-info/zipball/3e38aea07b658dee29691be8f3c3510bee88782c",
+                "reference": "3e38aea07b658dee29691be8f3c3510bee88782c",
                 "shasum": ""
             },
             "require": {
@@ -18544,7 +18523,7 @@
                 "type"
             ],
             "support": {
-                "source": "https://github.com/symfony/type-info/tree/v8.1.11"
+                "source": "https://github.com/symfony/type-info/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -18564,7 +18543,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-02T10:58:30+00:00"
+            "time": "2026-11-16T12:51:10+00:00"
         },
         {
             "name": "symfony/uid",
@@ -18646,16 +18625,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v8.1.10",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "3412a5af7d34a19515a77890fc804fe8e50d1a4f"
+                "reference": "f681b9e07afd027556e5b1eda96fcad5a27a2b98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3412a5af7d34a19515a77890fc804fe8e50d1a4f",
-                "reference": "3412a5af7d34a19515a77890fc804fe8e50d1a4f",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/f681b9e07afd027556e5b1eda96fcad5a27a2b98",
+                "reference": "f681b9e07afd027556e5b1eda96fcad5a27a2b98",
                 "shasum": ""
             },
             "require": {
@@ -18709,7 +18688,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v8.1.10"
+                "source": "https://github.com/symfony/var-dumper/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -18729,7 +18708,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-26T21:55:04+00:00"
+            "time": "2026-11-12T10:29:11+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -18933,16 +18912,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.8.0",
+            "version": "v5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpdotenv/phpdotenv.git",
-                "reference": "96149103e62ac67e915f6d2ef59b72dee2e011e0"
+                "reference": "ba37876e98122ca15151247ce1187d20ee8bf4e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpdotenv/phpdotenv/zipball/96149103e62ac67e915f6d2ef59b72dee2e011e0",
-                "reference": "96149103e62ac67e915f6d2ef59b72dee2e011e0",
+                "url": "https://api.github.com/repos/phpdotenv/phpdotenv/zipball/ba37876e98122ca15151247ce1187d20ee8bf4e0",
+                "reference": "ba37876e98122ca15151247ce1187d20ee8bf4e0",
                 "shasum": ""
             },
             "require": {
@@ -19001,7 +18980,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpdotenv/phpdotenv/issues",
-                "source": "https://github.com/phpdotenv/phpdotenv/tree/v5.8.0"
+                "source": "https://github.com/phpdotenv/phpdotenv/tree/v5.8.1"
             },
             "funding": [
                 {
@@ -19013,7 +18992,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-25T16:26:19+00:00"
+            "time": "2026-11-23T00:53:11+00:00"
         },
         {
             "name": "voku/portable-ascii",
